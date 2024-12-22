@@ -13,7 +13,7 @@
   <header
     class="flex flex-col justify-center items-center p-4"
   >
-    <IconChristmasTree class="w-16 h-16" />
+    <IconChristmasTree class="w-12 h-12" />
     <h1 class="text-2xl font-bold">Xmas Quiz</h1>
   </header>
   <main class="flex-1 p-4">
