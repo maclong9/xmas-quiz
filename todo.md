@@ -1,3 +1,3 @@
-- [ ] add popular music for 80s, 90s, 00s, and moder
-- [ ] category names for  Japanese Cars
+- [ ] add popular music for 80s, 90s, 00s, and model
+- [ ] add some general car related questions
 - [ ] add some questions for general culture

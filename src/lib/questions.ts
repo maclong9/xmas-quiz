@@ -481,7 +481,7 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Nissan",
     incorrectAnswers: ["Toyota", "Honda", "Mazda"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "What is the maximum number of points possible from a single break in snooker?",
@@ -600,7 +600,7 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "The Andes",
     incorrectAnswers: ["The Rockies", "The Alps", "The Himalayas"],
-    category: "Geography
+    category: "Geography"
   },
   {
     question: "What is the highest mountain in Wales?",
@@ -691,7 +691,7 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Toyota",
     incorrectAnswers: ["Honda", "Nissan", "Mazda"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "What is the normal body temperature range in Celsius?",
@@ -1139,35 +1139,35 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Honda",
     incorrectAnswers: ["Toyota", "Nissan", "Mazda"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "Which Japanese car company owns Lexus?",
     difficulty: "Medium",
     correctAnswer: "Toyota",
     incorrectAnswers: ["Honda", "Nissan", "Mitsubishi"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "What year was the first Nissan GT-R released?",
     difficulty: "Hard",
     correctAnswer: "2007",
     incorrectAnswers: ["2005", "2009", "2003"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "Which Japanese manufacturer is known for the RX-7?",
     difficulty: "Medium",
     correctAnswer: "Mazda",
     incorrectAnswers: ["Toyota", "Honda", "Subaru"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "What is the name of Toyota's luxury vehicle division?",
     difficulty: "Easy",
     correctAnswer: "Lexus",
     incorrectAnswers: ["Infiniti", "Acura", "Genesis"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "What is the normal oxygen saturation range?",
@@ -1244,7 +1244,7 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Subaru",
     incorrectAnswers: ["Mitsubishi", "Toyota", "Nissan"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "What is the normal range for diastolic blood pressure?",
@@ -1328,7 +1328,7 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Mitsubishi",
     incorrectAnswers: ["Subaru", "Toyota", "Honda"],
-    category: "Japanese Cars"
+    category: "Cars"
   },
   {
     question: "What is the medical term for low blood sugar?",
@@ -1412,7 +1412,13 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Mazda",
     incorrectAnswers: ["Honda", "Toyota", "Nissan"],
-    category: "Japanese Cars"
+    category: "Cars"
+  },
+  {
+    question: "What is an MVP in software development",
+    difficulty: "Easy",
+    correctAnswer: "Minimum Viable Product",
+    incorrectAnswer: ["Most Valuable Player", "Many Variants Perfected", "My Versatile Plugin"]
   },
   {
     question: "What is the medical term for inflammation of the appendix?",
