@@ -12,7 +12,7 @@
 
 <div class="h-screen max-h-screen max-w-screen overflow-hidden flex flex-col">
   <header
-    class={`flex flex-col justify-center items-center p-4 ${$page.url.pathname === "/" ? "pt-36" : ""}`}
+    class={`flex flex-col justify-center items-center p-4 ${$page.url.pathname === "/" ? "" : ""}`}
   >
     <IconChristmasTree class="w-16 h-16" />
     <h1 class="text-2xl font-bold">Xmas Quiz</h1>
