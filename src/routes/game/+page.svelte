@@ -114,13 +114,18 @@
         {#each answers as answer, i (answer)}
           <button
             class={`border-4 border-transparent
-            ${ selectedAnswer === answer
-                ? answer === currentQuestion.correctAnswer
-                  ? "bg-green-500"
-                  : "bg-red-500"
-                : ""
-            }
-            ${questionAnswered && answer === currentQuestion.correctAnswer.toString() && "border-green-500"}`}
+          ${
+            selectedAnswer === answer
+              ? answer === currentQuestion.correctAnswer
+                ? "bg-green-500"
+                : "bg-red-500"
+              : ""
+          }
+          ${
+            questionAnswered && answer === currentQuestion.correctAnswer
+              ? "!border-green-500"
+              : ""
+          }`}
             onclick={() => handleAnswer(answer)}
             disabled={selectedAnswer !== null}
             in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}
