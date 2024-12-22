@@ -71,9 +71,9 @@
     <p class="text-2xl font-semibold" in:scale={{ delay: 600, duration: 500 }}>
       Your final score is: {score}
     </p>
-    <a href="/" class="button" in:scale={{ delay: 900, duration: 500 }}
-      >Play Again</a
-    >
+    <a href="/" class="button" in:scale={{ delay: 900, duration: 500 }}>
+      Play Again
+    </a>
   </div>
 {:else}
   <div class="p-4 h-full" in:fade>
@@ -120,7 +120,7 @@
                   : "bg-red-500"
                 : ""
             }
-            ${questionAnswered && answer === currentQuestion.correctAnswer && 'border-4 border-green-500'}`}
+            ${questionAnswered && answer === currentQuestion.correctAnswer && "border-4 border-green-500"}`}
             onclick={() => handleAnswer(answer)}
             disabled={selectedAnswer !== null}
             in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}

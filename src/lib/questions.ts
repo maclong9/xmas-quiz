@@ -6,7 +6,15 @@ export const shuffleArray = (array: any[]) => {
   return array;
 };
 
-export const questions = [
+interface Question {
+  question: string;
+  difficulty: string;
+  correctAnswer: string | boolean;
+  incorrectAnswers: string[] | boolean[];
+  category: string;
+}
+
+export const questions: Question[] = [
   {
     question: "Earth is within the Milky Way galaxy",
     difficulty: "Easy",
@@ -2385,5 +2393,915 @@ export const questions = [
     correctAnswer: "Route from the Varangians to the Greeks",
     incorrectAnswers: ["Silk Road", "Amber Road", "Salt Road"],
     category: "History"
-  }
+  },
+  {
+    question: "Which car manufacturer produces the 911 model?",
+    difficulty: "Easy",
+    correctAnswer: "Porsche",
+    incorrectAnswers: ["BMW", "Mercedes", "Audi"],
+    category: "Cars"
+  },
+  {
+    question: "What country is Ferrari from?",
+    difficulty: "Easy",
+    correctAnswer: "Italy",
+    incorrectAnswers: ["Germany", "France", "Spain"],
+    category: "Cars"
+  },
+  {
+    question: "What does BMW stand for in English?",
+    difficulty: "Medium",
+    correctAnswer: "Bavarian Motor Works",
+    incorrectAnswers: ["British Motor Works", "Belgian Motor Works", "Berlin Motor Works"],
+    category: "Cars"
+  },
+  {
+    question: "What is the traditional Japanese tea ceremony called?",
+    difficulty: "Medium",
+    correctAnswer: "Chanoyu",
+    incorrectAnswers: ["Kabuki", "Ikebana", "Origami"],
+    category: "Culture"
+  },
+  {
+    question: "What is the national dress of Scotland called?",
+    difficulty: "Easy",
+    correctAnswer: "Kilt",
+    incorrectAnswers: ["Sarong", "Kimono", "Lederhosen"],
+    category: "Culture"
+  },
+  {
+    question: "Which band released 'Hotel California' in 1977?",
+    difficulty: "Easy",
+    correctAnswer: "Eagles",
+    incorrectAnswers: ["Led Zeppelin", "Pink Floyd", "The Beatles"],
+    category: "Music"
+  },
+  {
+    question: "Who sang 'Dancing Queen' in 1976?",
+    difficulty: "Easy",
+    correctAnswer: "ABBA",
+    incorrectAnswers: ["Queen", "The Bee Gees", "Blondie"],
+    category: "Music"
+  },
+  {
+    question: "Which band released 'Sweet Child O' Mine' in 1987?",
+    difficulty: "Medium",
+    correctAnswer: "Guns N' Roses",
+    incorrectAnswers: ["Aerosmith", "Bon Jovi", "Mötley Crüe"],
+    category: "Music"
+  },
+  {
+    question: "Who sang 'Smells Like Teen Spirit' in 1991?",
+    difficulty: "Easy",
+    correctAnswer: "Nirvana",
+    incorrectAnswers: ["Pearl Jam", "Soundgarden", "Alice in Chains"],
+    category: "Music"
+  },
+  {
+    question: "Which artist released 'Shape of You' in 2017?",
+    difficulty: "Easy",
+    correctAnswer: "Ed Sheeran",
+    incorrectAnswers: ["Justin Bieber", "Bruno Mars", "The Weeknd"],
+    category: "Music"
+  },
+  {
+    question: "Which car manufacturer produces the Mustang?",
+    difficulty: "Easy",
+    correctAnswer: "Ford",
+    incorrectAnswers: ["Chevrolet", "Dodge", "Plymouth"],
+    category: "Cars"
+  },
+  {
+    question: "What is the flagship supercar model of McLaren?",
+    difficulty: "Medium",
+    correctAnswer: "P1",
+    incorrectAnswers: ["F1", "720S", "Senna"],
+    category: "Cars"
+  },
+  {
+    question: "Which car company uses the tagline 'The Ultimate Driving Machine'?",
+    difficulty: "Medium",
+    correctAnswer: "BMW",
+    incorrectAnswers: ["Mercedes-Benz", "Audi", "Porsche"],
+    category: "Cars"
+  },
+  {
+    question: "What is the traditional greeting in Japan called?",
+    difficulty: "Easy",
+    correctAnswer: "Bow",
+    incorrectAnswers: ["Handshake", "Namaste", "Wai"],
+    category: "Culture"
+  },
+  {
+    question: "Which festival is known as the 'Festival of Colors'?",
+    difficulty: "Medium",
+    correctAnswer: "Holi",
+    incorrectAnswers: ["Diwali", "Songkran", "Carnival"],
+    category: "Culture"
+  },
+  {
+    question: "Who released 'Stairway to Heaven' in 1971?",
+    difficulty: "Easy",
+    correctAnswer: "Led Zeppelin",
+    incorrectAnswers: ["Deep Purple", "Black Sabbath", "The Who"],
+    category: "Music"
+  },
+  {
+    question: "Which band released 'Another Brick in the Wall' in 1979?",
+    difficulty: "Easy",
+    correctAnswer: "Pink Floyd",
+    incorrectAnswers: ["The Who", "Genesis", "Yes"],
+    category: "Music"
+  },
+  {
+    question: "Who sang 'Like a Prayer' in 1989?",
+    difficulty: "Easy",
+    correctAnswer: "Madonna",
+    incorrectAnswers: ["Cyndi Lauper", "Whitney Houston", "Janet Jackson"],
+    category: "Music"
+  },
+  {
+    question: "Which band released 'Black or White' in 1991?",
+    difficulty: "Easy",
+    correctAnswer: "Michael Jackson",
+    incorrectAnswers: ["Prince", "George Michael", "Bobby Brown"],
+    category: "Music"
+  },
+  {
+    question: "Who performed 'Blinding Lights' released in 2020?",
+    difficulty: "Easy",
+    correctAnswer: "The Weeknd",
+    incorrectAnswers: ["Post Malone", "Drake", "Justin Bieber"],
+    category: "Music"
+  },
+  {
+    question: "What car company owns Lamborghini?",
+    difficulty: "Medium",
+    correctAnswer: "Volkswagen Group",
+    incorrectAnswers: ["BMW", "Mercedes-Benz", "Ferrari"],
+    category: "Cars"
+  },
+  {
+    question: "Which car manufacturer created the GT-R?",
+    difficulty: "Medium",
+    correctAnswer: "Nissan",
+    incorrectAnswers: ["Toyota", "Honda", "Mazda"],
+    category: "Cars"
+  },
+  {
+    question: "What car company produces the Model S?",
+    difficulty: "Easy",
+    correctAnswer: "Tesla",
+    incorrectAnswers: ["Lucid", "Rivian", "Polestar"],
+    category: "Cars"
+  },
+  {
+    question: "What is the traditional dress of Korea called?",
+    difficulty: "Medium",
+    correctAnswer: "Hanbok",
+    incorrectAnswers: ["Kimono", "Cheongsam", "Ao Dai"],
+    category: "Culture"
+  },
+  {
+    question: "Which country originated the art of origami?",
+    difficulty: "Medium",
+    correctAnswer: "Japan",
+    incorrectAnswers: ["China", "Korea", "Vietnam"],
+    category: "Culture"
+  },
+  {
+    question: "Who sang 'Stayin' Alive' in 1977?",
+    difficulty: "Easy",
+    correctAnswer: "Bee Gees",
+    incorrectAnswers: ["ABBA", "Queen", "The Jackson 5"],
+    category: "Music"
+  },
+  {
+    question: "Which band released 'Walk This Way' in 1986?",
+    difficulty: "Medium",
+    correctAnswer: "Run-DMC with Aerosmith",
+    incorrectAnswers: ["Beastie Boys", "The Police", "Bon Jovi"],
+    category: "Music"
+  },
+  {
+    question: "Who performed 'Ice Ice Baby' in 1990?",
+    difficulty: "Easy",
+    correctAnswer: "Vanilla Ice",
+    incorrectAnswers: ["MC Hammer", "Beastie Boys", "Public Enemy"],
+    category: "Music"
+  },
+  {
+    question: "Which artist released 'Bad Guy' in 2019?",
+    difficulty: "Easy",
+    correctAnswer: "Billie Eilish",
+    incorrectAnswers: ["Ariana Grande", "Taylor Swift", "Lorde"],
+    category: "Music"
+  },
+  {
+    question: "Who sang 'Sweet Dreams (Are Made of This)' in 1983?",
+    difficulty: "Medium",
+    correctAnswer: "Eurythmics",
+    incorrectAnswers: ["Duran Duran", "Culture Club", "The Human League"],
+    category: "Music"
+  },
+  {
+    question: "Which 2019 film features Joaquin Phoenix as Arthur Fleck?",
+    difficulty: "Easy",
+    correctAnswer: "Joker",
+    incorrectAnswers: ["The Batman", "Venom", "Dark Phoenix"],
+    category: "Movies"
+  },
+  {
+    question: "What 2008 superhero film stars Robert Downey Jr. as Tony Stark?",
+    difficulty: "Easy",
+    correctAnswer: "Iron Man",
+    incorrectAnswers: ["The Dark Knight", "Hulk", "Spider-Man"],
+    category: "Movies"
+  },
+  {
+    question: "Which Korean TV series became Netflix's most-watched show in 2021?",
+    difficulty: "Easy",
+    correctAnswer: "Squid Game",
+    incorrectAnswers: ["All of Us Are Dead", "Kingdom", "Sweet Home"],
+    category: "Television"
+  },
+  {
+    question: "Which HBO series features dragons and is based on George R.R. Martin's books?",
+    difficulty: "Easy",
+    correctAnswer: "Game of Thrones",
+    incorrectAnswers: ["The Witcher", "Shadow and Bone", "Wheel of Time"],
+    category: "Television"
+  },
+  {
+    question: "What is the traditional New Year celebration in China called?",
+    difficulty: "Medium",
+    correctAnswer: "Spring Festival",
+    incorrectAnswers: ["Mid-Autumn Festival", "Dragon Boat Festival", "Lantern Festival"],
+    category: "Culture"
+  },
+  {
+    question: "What is the traditional Indian wedding dress called?",
+    difficulty: "Medium",
+    correctAnswer: "Lehenga",
+    incorrectAnswers: ["Sari", "Salwar", "Kurti"],
+    category: "Culture"
+  },
+  {
+    question: "Who released 'As It Was' in 2022?",
+    difficulty: "Easy",
+    correctAnswer: "Harry Styles",
+    incorrectAnswers: ["Ed Sheeran", "Justin Bieber", "The Weeknd"],
+    category: "Music"
+  },
+  {
+    question: "Which artist released 'Anti-Hero' in 2022?",
+    difficulty: "Easy",
+    correctAnswer: "Taylor Swift",
+    incorrectAnswers: ["Lana Del Rey", "Billie Eilish", "Olivia Rodrigo"],
+    category: "Music"
+  },
+  {
+    question: "Who performed 'Uptown Funk' in 2014?",
+    difficulty: "Easy",
+    correctAnswer: "Mark Ronson ft. Bruno Mars",
+    incorrectAnswers: ["Pharrell Williams", "Justin Timberlake", "The Weeknd"],
+    category: "Music"
+  },
+  {
+    question: "Which Netflix series features the character Eleven?",
+    difficulty: "Easy",
+    correctAnswer: "Stranger Things",
+    incorrectAnswers: ["Wednesday", "The Umbrella Academy", "Dark"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 film features Margot Robbie and Ryan Gosling in pink?",
+    difficulty: "Easy",
+    correctAnswer: "Barbie",
+    incorrectAnswers: ["Mean Girls", "Legally Blonde 3", "Princess Diaries 3"],
+    category: "Movies"
+  },
+  {
+    question: "What 2023 Christopher Nolan film explores the creation of the atomic bomb?",
+    difficulty: "Easy",
+    correctAnswer: "Oppenheimer",
+    incorrectAnswers: ["Dunkirk", "Tenet", "Interstellar"],
+    category: "Movies"
+  },
+  {
+    question: "Which Apple TV+ series stars Jason Sudeikis as an American football coach in England?",
+    difficulty: "Easy",
+    correctAnswer: "Ted Lasso",
+    incorrectAnswers: ["The Morning Show", "Shrinking", "Bad Sisters"],
+    category: "Television"
+  },
+  {
+    question: "What Netflix series follows Queen Elizabeth II's reign?",
+    difficulty: "Easy",
+    correctAnswer: "The Crown",
+    incorrectAnswers: ["Bridgerton", "The Great", "Victoria"],
+    category: "Television"
+  },
+  {
+    question: "What is the traditional Moon viewing festival in Japan called?",
+    difficulty: "Medium",
+    correctAnswer: "Tsukimi",
+    incorrectAnswers: ["Hanami", "Tanabata", "Obon"],
+    category: "Culture"
+  },
+  {
+    question: "What is the traditional Korean martial art called?",
+    difficulty: "Medium",
+    correctAnswer: "Taekwondo",
+    incorrectAnswers: ["Karate", "Judo", "Kung Fu"],
+    category: "Culture"
+  },
+  {
+    question: "Who released 'Flowers' in 2023?",
+    difficulty: "Easy",
+    correctAnswer: "Miley Cyrus",
+    incorrectAnswers: ["Dua Lipa", "Ariana Grande", "Selena Gomez"],
+    category: "Music"
+  },
+  {
+    question: "Which artist released 'Vampire' in 2023?",
+    difficulty: "Easy",
+    correctAnswer: "Olivia Rodrigo",
+    incorrectAnswers: ["Taylor Swift", "Billie Eilish", "Lorde"],
+    category: "Music"
+  },
+  {
+    question: "Who performed 'Unholy' in 2022?",
+    difficulty: "Easy",
+    correctAnswer: "Sam Smith & Kim Petras",
+    incorrectAnswers: ["Doja Cat", "Lady Gaga", "The Weeknd"],
+    category: "Music"
+  },
+  {
+    question: "Which Disney+ series features Pedro Pascal as Din Djarin?",
+    difficulty: "Medium",
+    correctAnswer: "The Mandalorian",
+    incorrectAnswers: ["Andor", "Obi-Wan Kenobi", "The Book of Boba Fett"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 film stars Tom Cruise in his final Mission Impossible role?",
+    difficulty: "Easy",
+    correctAnswer: "Mission: Impossible - Dead Reckoning Part One",
+    incorrectAnswers: ["Top Gun: Maverick", "Edge of Tomorrow 2", "Mission: Impossible 7"],
+    category: "Movies"
+  },
+  {
+    question: "What 2022 film won the Oscar for Best Picture?",
+    difficulty: "Medium",
+    correctAnswer: "Everything Everywhere All at Once",
+    incorrectAnswers: ["The Banshees of Inisherin", "Top Gun: Maverick", "Elvis"],
+    category: "Movies"
+  },
+  {
+    question: "Which HBO series is based on a video game featuring zombies?",
+    difficulty: "Easy",
+    correctAnswer: "The Last of Us",
+    incorrectAnswers: ["House of the Dragon", "The Walking Dead", "Resident Evil"],
+    category: "Television"
+  },
+  {
+    question: "What Disney+ Marvel series features Tatiana Maslany as Jennifer Walters?",
+    difficulty: "Medium",
+    correctAnswer: "She-Hulk: Attorney at Law",
+    incorrectAnswers: ["Ms. Marvel", "WandaVision", "Loki"],
+    category: "Television"
+  },
+  {
+    question: "What is the traditional Vietnamese New Year called?",
+    difficulty: "Medium",
+    correctAnswer: "Tết",
+    incorrectAnswers: ["Songkran", "Seollal", "Losar"],
+    category: "Culture"
+  },
+  {
+    question: "What is the traditional Mexican Day of the Dead celebration called?",
+    difficulty: "Easy",
+    correctAnswer: "Día de los Muertos",
+    incorrectAnswers: ["Cinco de Mayo", "Las Posadas", "Carnival"],
+    category: "Culture"
+  },
+  {
+    question: "Who released 'Rich Flex' in 2022?",
+    difficulty: "Easy",
+    correctAnswer: "Drake & 21 Savage",
+    incorrectAnswers: ["Travis Scott", "Future", "Lil Baby"],
+    category: "Music"
+  },
+  {
+    question: "Which artist released 'Kill Bill' in 2023?",
+    difficulty: "Easy",
+    correctAnswer: "SZA",
+    incorrectAnswers: ["Doja Cat", "Megan Thee Stallion", "Cardi B"],
+    category: "Music"
+  },
+  {
+    question: "Who performed 'About Damn Time' in 2022?",
+    difficulty: "Easy",
+    correctAnswer: "Lizzo",
+    incorrectAnswers: ["Beyoncé", "Adele", "Meghan Trainor"],
+    category: "Music"
+  },
+  {
+    question: "Which Apple TV+ series features Harrison Ford in his first major TV role?",
+    difficulty: "Medium",
+    correctAnswer: "Shrinking",
+    incorrectAnswers: ["Foundation", "For All Mankind", "Slow Horses"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 film directed by Greta Gerwig broke box office records for a female director?",
+    difficulty: "Medium",
+    correctAnswer: "Barbie",
+    incorrectAnswers: ["Little Women", "Lady Bird", "White Noise"],
+    category: "Movies"
+  },
+  {
+    question: "What 2022 film features Brendan Fraser in his Oscar-winning comeback role?",
+    difficulty: "Hard",
+    correctAnswer: "The Whale",
+    incorrectAnswers: ["The Mummy Returns", "Killers of the Flower Moon", "Amsterdam"],
+    category: "Movies"
+  },
+  {
+    question: "Which showrunner created both 'Succession' and 'Peep Show'?",
+    difficulty: "Hard",
+    correctAnswer: "Jesse Armstrong",
+    incorrectAnswers: ["Vince Gilligan", "Ryan Murphy", "Shonda Rhimes"],
+    category: "Television"
+  },
+  {
+    question: "What is the name of the fictional language created for 'Game of Thrones'?",
+    difficulty: "Medium",
+    correctAnswer: "Dothraki",
+    incorrectAnswers: ["Valyrian", "Westerosi", "Ghiscari"],
+    category: "Television"
+  },
+  {
+    question: "What ancient Chinese philosophy emphasizes harmony with the Tao?",
+    difficulty: "Hard",
+    correctAnswer: "Taoism",
+    incorrectAnswers: ["Confucianism", "Buddhism", "Legalism"],
+    category: "Culture"
+  },
+  {
+    question: "Which traditional Indian classical dance form originated in Kerala?",
+    difficulty: "Hard",
+    correctAnswer: "Kathakali",
+    incorrectAnswers: ["Bharatanatyam", "Odissi", "Kuchipudi"],
+    category: "Culture"
+  },
+  {
+    question: "Who produced Taylor Swift's album 'Midnights'?",
+    difficulty: "Medium",
+    correctAnswer: "Jack Antonoff",
+    incorrectAnswers: ["Max Martin", "Aaron Dessner", "Rick Rubin"],
+    category: "Music"
+  },
+  {
+    question: "Which artist's 2022 album 'Renaissance' was part of a planned trilogy?",
+    difficulty: "Medium",
+    correctAnswer: "Beyoncé",
+    incorrectAnswers: ["Rihanna", "Lady Gaga", "Adele"],
+    category: "Music"
+  },
+  {
+    question: "What was the first K-pop group to headline Coachella?",
+    difficulty: "Hard",
+    correctAnswer: "BLACKPINK",
+    incorrectAnswers: ["BTS", "TWICE", "Red Velvet"],
+    category: "Music"
+  },
+  {
+    question: "Which 2023 series finale broke HBO's streaming record with 12.1 million viewers?",
+    difficulty: "Medium",
+    correctAnswer: "Succession",
+    incorrectAnswers: ["The Last of Us", "House of the Dragon", "The White Lotus"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 Martin Scorsese film stars Leonardo DiCaprio and Robert De Niro?",
+    difficulty: "Medium",
+    correctAnswer: "Killers of the Flower Moon",
+    incorrectAnswers: ["The Departed 2", "The Irishman 2", "Gangs of New York 2"],
+    category: "Movies"
+  },
+  {
+    question: "What was the highest-grossing non-English language film of all time?",
+    difficulty: "Hard",
+    correctAnswer: "Demon Slayer: Mugen Train",
+    incorrectAnswers: ["Crouching Tiger, Hidden Dragon", "Parasite", "Life Is Beautiful"],
+    category: "Movies"
+  },
+  {
+    question: "Which actor plays both Roman Roy in 'Succession' and General Zod in 'Man of Steel'?",
+    difficulty: "Medium",
+    correctAnswer: "Kieran Culkin",
+    incorrectAnswers: ["Michael Shannon", "Jeremy Strong", "Matthew Macfadyen"],
+    category: "Television"
+  },
+  {
+    question: "What is the name of the AI robot in the 2023 series 'Mrs. Davis'?",
+    difficulty: "Hard",
+    correctAnswer: "Mrs. Davis",
+    incorrectAnswers: ["Mother", "The Algorithm", "The Machine"],
+    category: "Television"
+  },
+  {
+    question: "What is the traditional fire-walking ceremony in Fiji called?",
+    difficulty: "Hard",
+    correctAnswer: "Vilavilairevo",
+    incorrectAnswers: ["Bula", "Meke", "Sevusevu"],
+    category: "Culture"
+  },
+  {
+    question: "Which traditional Japanese art form involves arranging flowers?",
+    difficulty: "Medium",
+    correctAnswer: "Ikebana",
+    incorrectAnswers: ["Bonsai", "Origami", "Kintsugi"],
+    category: "Culture"
+  },
+  {
+    question: "Which producer worked on both The Weeknd's 'Blinding Lights' and Taylor Swift's '1989'?",
+    difficulty: "Hard",
+    correctAnswer: "Max Martin",
+    incorrectAnswers: ["Jack Antonoff", "Rick Rubin", "Mark Ronson"],
+    category: "Music"
+  },
+  {
+    question: "What was Travis Scott's 2023 album that followed 'Astroworld'?",
+    difficulty: "Medium",
+    correctAnswer: "UTOPIA",
+    incorrectAnswers: ["DYSTOPIA", "RODEO 2", "BIRDS"],
+    category: "Music"
+  },
+  {
+    question: "Which artist's 2023 tour became the first to gross over $1 billion?",
+    difficulty: "Medium",
+    correctAnswer: "Taylor Swift",
+    incorrectAnswers: ["Beyoncé", "Ed Sheeran", "The Weeknd"],
+    category: "Music"
+  },
+  {
+    question: "What is the name of the fictional tech company in the series 'Black Mirror'?",
+    difficulty: "Hard",
+    correctAnswer: "Tuckersoft",
+    incorrectAnswers: ["Saito Corp", "TCKR Systems", "Black Mirror Inc"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 film stars Bradley Cooper as Leonard Bernstein?",
+    difficulty: "Medium",
+    correctAnswer: "Maestro",
+    incorrectAnswers: ["A Star is Born 2", "The Conductor", "Symphony"],
+    category: "Movies"
+  },
+  {
+    question: "What was Wes Anderson's 2023 Netflix anthology film?",
+    difficulty: "Hard",
+    correctAnswer: "The Wonderful Story of Henry Sugar",
+    incorrectAnswers: ["Asteroid City", "The French Dispatch 2", "Budapest Hotel Returns"],
+    category: "Movies"
+  },
+  {
+    question: "Which 2023 series features Steven Yeun and Ali Wong in a road rage incident?",
+    difficulty: "Medium",
+    correctAnswer: "Beef",
+    incorrectAnswers: ["Road Kill", "Rage", "The Incident"],
+    category: "Television"
+  },
+  {
+    question: "What is the name of the fictional drug company in 'The Bear' Season 2?",
+    difficulty: "Hard",
+    correctAnswer: "KBL Dynamics",
+    incorrectAnswers: ["Chicago Pharma", "Bear Pharmaceuticals", "Midwest Medical"],
+    category: "Television"
+  },
+  {
+    question: "What is the traditional coming-of-age ceremony in Japan called?",
+    difficulty: "Hard",
+    correctAnswer: "Seijin no Hi",
+    incorrectAnswers: ["Shichi-Go-San", "Omiyamairi", "Yuino"],
+    category: "Culture"
+  },
+  {
+    question: "Which traditional Korean art form involves natural fermentation?",
+    difficulty: "Medium",
+    correctAnswer: "Kimchi-making",
+    incorrectAnswers: ["Soju-brewing", "Tea ceremony", "Rice wine production"],
+    category: "Culture"
+  },
+  {
+    question: "Which song on Taylor Swift's 'Midnights' features Lana Del Rey?",
+    difficulty: "Hard",
+    correctAnswer: "Snow on the Beach",
+    incorrectAnswers: ["Karma", "Lavender Haze", "Anti-Hero"],
+    category: "Music"
+  },
+  {
+    question: "What was the name of Jung Kook's 2023 solo debut album?",
+    difficulty: "Medium",
+    correctAnswer: "GOLDEN",
+    incorrectAnswers: ["SILVER", "SEVEN", "STILL WITH YOU"],
+    category: "Music"
+  },
+  {
+    question: "Which artist broke Drake's record for most monthly Spotify listeners in 2023?",
+    difficulty: "Hard",
+    correctAnswer: "Taylor Swift",
+    incorrectAnswers: ["The Weeknd", "Bad Bunny", "Ed Sheeran"],
+    category: "Music"
+  },
+  {
+    question: "What is the name of the AI companion in the series 'Black Mirror: Joan Is Awful'?",
+    difficulty: "Hard",
+    correctAnswer: "Streamberry Assistant",
+    incorrectAnswers: ["NetAI", "StreamHelper", "Digital Friend"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 film stars Cillian Murphy as J. Robert Oppenheimer's rival?",
+    difficulty: "Hard",
+    correctAnswer: "Lewis Strauss",
+    incorrectAnswers: ["Edward Teller", "Klaus Fuchs", "Ernest Lawrence"],
+    category: "Movies"
+  },
+  {
+    question: "What 2023 horror film features a robotic AI doll?",
+    difficulty: "Medium",
+    correctAnswer: "M3GAN",
+    incorrectAnswers: ["Annabelle Comes Home", "Child's Play 2023", "The Doll"],
+    category: "Movies"
+  },
+  {
+    question: "In 'The Last of Us', what song does Joel sing to Ellie in Episode 3?",
+    difficulty: "Hard",
+    correctAnswer: "Long Long Time",
+    incorrectAnswers: ["Take On Me", "Future Days", "Just Like Heaven"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 series is based on a Pulitzer Prize-winning novel by Anthony Doerr?",
+    difficulty: "Medium",
+    correctAnswer: "All the Light We Cannot See",
+    incorrectAnswers: ["Lessons in Chemistry", "Daisy Jones & The Six", "Fleishman Is in Trouble"],
+    category: "Television"
+  },
+  {
+    question: "What is the traditional Aboriginal Australian ceremony for spiritual cleansing called?",
+    difficulty: "Hard",
+    correctAnswer: "Smoking Ceremony",
+    incorrectAnswers: ["Dreamtime Ritual", "Walkabout", "Corroboree"],
+    category: "Culture"
+  },
+  {
+    question: "Which traditional Chinese festival celebrates the end of winter?",
+    difficulty: "Medium",
+    correctAnswer: "Lantern Festival",
+    incorrectAnswers: ["Dragon Boat Festival", "Ghost Festival", "Double Ninth Festival"],
+    category: "Culture"
+  },
+  {
+    question: "Which song samples Madonna's 'Material Girl' on Ice Spice's 2023 album?",
+    difficulty: "Hard",
+    correctAnswer: "Princess Diana",
+    incorrectAnswers: ["Munch", "Bikini Bottom", "In Ha Mood"],
+    category: "Music"
+  },
+  {
+    question: "What was the name of NewJeans' 2023 EP?",
+    difficulty: "Medium",
+    correctAnswer: "Get Up",
+    incorrectAnswers: ["OMG", "Ditto", "Super Shy"],
+    category: "Music"
+  },
+  {
+    question: "Which producer worked on both Lana Del Rey's and Bleachers' 2023 albums?",
+    difficulty: "Hard",
+    correctAnswer: "Jack Antonoff",
+    incorrectAnswers: ["Rick Rubin", "Max Martin", "Aaron Dessner"],
+    category: "Music"
+  },
+  {
+    question: "What is the name of the fictional streaming service in 'Succession' Season 4?",
+    difficulty: "Hard",
+    correctAnswer: "GoJo",
+    incorrectAnswers: ["Waystar+", "RoyCo Stream", "ATN+"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 film features Timothée Chalamet as a young Willy Wonka?",
+    difficulty: "Medium",
+    correctAnswer: "Wonka",
+    incorrectAnswers: ["Charlie", "The Chocolate Factory", "Pure Imagination"],
+    category: "Movies"
+  },
+  {
+    question: "What was the name of the fictional band in 'Daisy Jones & The Six'?",
+    difficulty: "Hard",
+    correctAnswer: "The Six",
+    incorrectAnswers: ["The Dunne Brothers", "The Aurora", "Sunset Sound"],
+    category: "Movies"
+  },
+  {
+    question: "Which actor plays Joel Miller in 'The Last of Us'?",
+    difficulty: "Medium",
+    correctAnswer: "Pedro Pascal",
+    incorrectAnswers: ["Oscar Isaac", "Wagner Moura", "Nikolaj Coster-Waldau"],
+    category: "Television"
+  },
+  {
+    question: "What is the name of the AI system in 'Foundation' Season 2?",
+    difficulty: "Hard",
+    correctAnswer: "Demerzel",
+    incorrectAnswers: ["Hari", "Prime Radiant", "Seldon AI"],
+    category: "Television"
+  },
+  {
+    question: "What is the traditional Maori welcoming ceremony called?",
+    difficulty: "Hard",
+    correctAnswer: "Pōwhiri",
+    incorrectAnswers: ["Haka", "Hongi", "Karanga"],
+    category: "Culture"
+  },
+  {
+    question: "Which traditional Indian art form uses colored powder to create floor designs?",
+    difficulty: "Medium",
+    correctAnswer: "Rangoli",
+    incorrectAnswers: ["Mehndi", "Warli", "Madhubani"],
+    category: "Culture"
+  },
+  {
+    question: "Which song on Beyoncé's 'Cowboy Carter' features Willie Nelson?",
+    difficulty: "Hard",
+    correctAnswer: "Smoke Hour",
+    incorrectAnswers: ["Texas Hold 'Em", "16 Carriages", "American Requiem"],
+    category: "Music"
+  },
+  {
+    question: "What was Doja Cat's controversial 2023 album called?",
+    difficulty: "Medium",
+    correctAnswer: "Scarlet",
+    incorrectAnswers: ["Paint the Town Red", "Demons", "Vegas"],
+    category: "Music"
+  },
+  {
+    question: "Which artist's 2023 tour caused 'seismic activity' in Seattle?",
+    difficulty: "Hard",
+    correctAnswer: "Taylor Swift",
+    incorrectAnswers: ["Beyoncé", "The Weeknd", "Drake"],
+    category: "Music"
+  },
+  {
+    question: "What is the name of the fictional tech company in 'Severance'?",
+    difficulty: "Hard",
+    correctAnswer: "Lumon Industries",
+    incorrectAnswers: ["Waystar Royco", "Massive Dynamic", "Delos Incorporated"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 film stars Paul Giamatti as a prep school teacher?",
+    difficulty: "Easy",
+    correctAnswer: "The Holdovers",
+    incorrectAnswers: ["Dead Poets Society 2", "School Days", "Winter Break"],
+    category: "Movies"
+  },
+  {
+    question: "What was Sofia Coppola's 2023 Priscilla Presley biopic called?",
+    difficulty: "Medium",
+    correctAnswer: "Priscilla",
+    incorrectAnswers: ["Elvis & Me", "Graceland", "The King's Wife"],
+    category: "Movies"
+  },
+  {
+    question: "Which director's cut of Napoleon was over 4 hours longer than the theatrical release?",
+    difficulty: "Hard",
+    correctAnswer: "Ridley Scott",
+    incorrectAnswers: ["Christopher Nolan", "Martin Scorsese", "Steven Spielberg"],
+    category: "Movies"
+  },
+  {
+    question: "What is the name of the main character in 'Wednesday'?",
+    difficulty: "Easy",
+    correctAnswer: "Wednesday Addams",
+    incorrectAnswers: ["Morticia Addams", "Enid Sinclair", "Bianca Barclay"],
+    category: "Television"
+  },
+  {
+    question: "Which 2023 series is based on a video game and stars Ella Purnell?",
+    difficulty: "Medium",
+    correctAnswer: "Fallout",
+    incorrectAnswers: ["The Last of Us", "Halo", "Mass Effect"],
+    category: "Television"
+  },
+  {
+    question: "What is the fictional language spoken by the Dothraki in 'House of the Dragon'?",
+    difficulty: "Hard",
+    correctAnswer: "High Valyrian",
+    incorrectAnswers: ["Low Valyrian", "Ancient Ghiscari", "Old Tongue"],
+    category: "Television"
+  },
+  {
+    question: "Who released 'Vampire' in 2023?",
+    difficulty: "Easy",
+    correctAnswer: "Olivia Rodrigo",
+    incorrectAnswers: ["Taylor Swift", "Billie Eilish", "Lorde"],
+    category: "Music"
+  },
+  {
+    question: "Which K-pop group released 'Super Shy' in 2023?",
+    difficulty: "Medium",
+    correctAnswer: "NewJeans",
+    incorrectAnswers: ["BLACKPINK", "TWICE", "IVE"],
+    category: "Music"
+  },
+  {
+    question: "What was the first song to reach 4 billion streams on Spotify?",
+    difficulty: "Hard",
+    correctAnswer: "Blinding Lights",
+    incorrectAnswers: ["Shape of You", "Dance Monkey", "Someone You Loved"],
+    category: "Music"
+  },
+  {
+    question: "What traditional Japanese art form involves the cultivation of miniature trees?",
+    difficulty: "Easy",
+    correctAnswer: "Bonsai",
+    incorrectAnswers: ["Ikebana", "Origami", "Kintsugi"],
+    category: "Culture"
+  },
+  {
+    question: "Which 2023 Disney film features the voice of Chris Pine as a dragon?",
+    difficulty: "Easy",
+    correctAnswer: "Wish",
+    incorrectAnswers: ["Elemental", "Strange World", "Dragon Empire"],
+    category: "Movies"
+  },
+  {
+    question: "What was the name of the 2023 film about Nike's pursuit of Michael Jordan?",
+    difficulty: "Medium",
+    correctAnswer: "Air",
+    incorrectAnswers: ["Just Do It", "Swoosh", "The Deal"],
+    category: "Movies"
+  },
+  {
+    question: "Which 2023 film required actors to speak a fictional 'whale language'?",
+    difficulty: "Hard",
+    correctAnswer: "Nyad",
+    incorrectAnswers: ["The Deep", "Ocean's Song", "Blue Deep"],
+    category: "Movies"
+  },
+  {
+    question: "Who plays Joel's brother Tommy in 'The Last of Us'?",
+    difficulty: "Easy",
+    correctAnswer: "Gabriel Luna",
+    incorrectAnswers: ["Pedro Pascal", "Nick Offerman", "Murray Bartlett"],
+    category: "Television"
+  },
+  {
+    question: "What is the name of the school in 'Wednesday'?",
+    difficulty: "Medium",
+    correctAnswer: "Nevermore Academy",
+    incorrectAnswers: ["Darkwood Academy", "Thornhill School", "Ravenwood Institute"],
+    category: "Television"
+  },
+  {
+    question: "What is the real name of the character 'The Bear' in 'The Bear'?",
+    difficulty: "Hard",
+    correctAnswer: "Carmen Berzatto",
+    incorrectAnswers: ["Michael Berzatto", "Richard Jerimovich", "Marcus Brooks"],
+    category: "Television"
+  },
+  {
+    question: "Who released 'Paint The Town Red' in 2023?",
+    difficulty: "Easy",
+    correctAnswer: "Doja Cat",
+    incorrectAnswers: ["Megan Thee Stallion", "Nicki Minaj", "Ice Spice"],
+    category: "Music"
+  },
+  {
+    question: "Which artist's 2023 album features the song 'Karma is My Boyfriend'?",
+    difficulty: "Medium",
+    correctAnswer: "Taylor Swift",
+    incorrectAnswers: ["Lana Del Rey", "Olivia Rodrigo", "Billie Eilish"],
+    category: "Music"
+  },
+  {
+    question: "What was the original title of SZA's 'Kill Bill' before release?",
+    difficulty: "Hard",
+    correctAnswer: "Kill Bill (Slight Return)",
+    incorrectAnswers: ["Bill Must Die", "Revenge Song", "Ex's Revenge"],
+    category: "Music"
+  },
+  {
+    question: "What traditional Korean side dishes are collectively called?",
+    difficulty: "Medium",
+    correctAnswer: "Banchan",
+    incorrectAnswers: ["Kimchi", "Namul", "Jeon"],
+    category: "Culture"
+  },
 ]
