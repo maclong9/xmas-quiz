@@ -13,6 +13,7 @@
   let score = $state(0);
   let gameOver = $state(false);
   let selectedAnswer = $state(null);
+  let questionAnswered = $state(false);
 
   // Computed values
   let currentQuestion = $derived(questions[currentQuestionIndex]);
@@ -25,6 +26,7 @@
 
   // Methods
   function handleAnswer(answer: null): void {
+    questionAnswered = true;
     selectedAnswer = answer;
     const isCorrect = answer === currentQuestion.correctAnswer;
 
@@ -48,11 +50,12 @@
       const nextQuestionIndex = currentQuestionIndex + 1;
       if (nextQuestionIndex < questions.length) {
         currentQuestionIndex = nextQuestionIndex;
+        questionAnswered = false;
         selectedAnswer = null;
       } else {
         gameOver = true;
       }
-    }, 1000);
+    }, 2000);
   }
 </script>
 
@@ -68,10 +71,7 @@
     <p class="text-2xl font-semibold" in:scale={{ delay: 600, duration: 500 }}>
       Your final score is: {score}
     </p>
-    <a
-      href="/"
-      class="button"
-      in:scale={{ delay: 900, duration: 500 }}
+    <a href="/" class="button" in:scale={{ delay: 900, duration: 500 }}
       >Play Again</a
     >
   </div>
@@ -113,15 +113,14 @@
       <div class="mt-4 min-h-[272px] flex flex-col justify-end">
         {#each answers as answer, i (answer)}
           <button
-            class={`${
+            class={`border-2 border-transparent ${
               selectedAnswer === answer
                 ? answer === currentQuestion.correctAnswer
                   ? "bg-green-500"
                   : "bg-red-500"
-                : "border-gray-300"
-            } ${
-              answer === currentQuestion.correctAnswer ? "border-green-500" : ""
-            }`}
+                : ""
+            }
+            ${questionAnswered && answer === currentQuestion.correctAnswer && 'border-4 border-green-500'}`}
             onclick={() => handleAnswer(answer)}
             disabled={selectedAnswer !== null}
             in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}

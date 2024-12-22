@@ -243,7 +243,7 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "12",
     incorrectAnswers: ["14", "10", "16"],
-    category: "Mathematics"
+    category: "Science"
   },
   {
     question: "Which element has the chemical symbol 'Fe'?",
@@ -453,14 +453,14 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "60-100 beats per minute",
     incorrectAnswers: ["40-60 beats per minute", "100-120 beats per minute", "120-140 beats per minute"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What color wire is typically used for the neutral conductor in US residential wiring?",
     difficulty: "Medium",
     correctAnswer: "White",
     incorrectAnswers: ["Black", "Green", "Red"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Which musical premiered at London's Prince Edward Theatre in 1989 with Lea Salonga as Kim?",
@@ -474,7 +474,7 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Daffodil",
     incorrectAnswers: ["Rose", "Thistle", "Leek"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "Which Japanese car manufacturer produces the Skyline GT-R?",
@@ -488,21 +488,21 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "147",
     incorrectAnswers: ["140", "155", "167"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What is the name of Chile's driest desert?",
     difficulty: "Medium",
     correctAnswer: "Atacama Desert",
     incorrectAnswers: ["Gobi Desert", "Sahara Desert", "Mojave Desert"],
-    category: "Chile"
+    category: "Geography"
   },
   {
     question: "What does API stand for in software development?",
     difficulty: "Easy",
     correctAnswer: "Application Programming Interface",
     incorrectAnswers: ["Application Protocol Interface", "Advanced Programming Interface", "Automated Program Integration"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What is the standard aperture f-stop scale?",
@@ -516,63 +516,63 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Albatross",
     incorrectAnswers: ["Eagle", "Birdie", "Bogey"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is the normal resting heart rate range for adults?",
     difficulty: "Medium",
     correctAnswer: "60-100 beats per minute",
     incorrectAnswers: ["40-60 beats per minute", "100-120 beats per minute", "120-140 beats per minute"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "Which medication is used as the first-line treatment for Type 2 Diabetes?",
     difficulty: "Medium",
     correctAnswer: "Metformin",
     incorrectAnswers: ["Insulin", "Glipizide", "Januvia"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the normal range for systolic blood pressure in adults?",
     difficulty: "Easy",
     correctAnswer: "90-120 mmHg",
     incorrectAnswers: ["140-160 mmHg", "70-80 mmHg", "130-150 mmHg"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What color wire is typically used for the ground wire in US residential wiring?",
     difficulty: "Easy",
     correctAnswer: "Green",
     incorrectAnswers: ["White", "Black", "Red"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What is the standard residential voltage in the United States?",
     difficulty: "Easy",
     correctAnswer: "120V",
     incorrectAnswers: ["240V", "110V", "220V"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Which type of electrical box must be used for ceiling fan installation?",
     difficulty: "Medium",
     correctAnswer: "Fan-rated box",
     incorrectAnswers: ["Standard junction box", "Plastic box", "Surface mount box"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Which team has won the most Premier League titles?",
     difficulty: "Easy",
     correctAnswer: "Manchester United",
     incorrectAnswers: ["Liverpool", "Chelsea", "Arsenal"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Who holds the record for most goals in a single Premier League season?",
     difficulty: "Medium",
     correctAnswer: "Erling Haaland",
     incorrectAnswers: ["Alan Shearer", "Mohamed Salah", "Cristiano Ronaldo"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Who composed 'The Phantom of the Opera'?",
@@ -593,56 +593,56 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Santiago",
     incorrectAnswers: ["Valparaíso", "Concepción", "Antofagasta"],
-    category: "Chile"
+    category: "Geography"
   },
   {
     question: "Which mountain range runs through Chile?",
     difficulty: "Easy",
     correctAnswer: "The Andes",
     incorrectAnswers: ["The Rockies", "The Alps", "The Himalayas"],
-    category: "Chile"
+    category: "Geography
   },
   {
     question: "What is the highest mountain in Wales?",
     difficulty: "Medium",
     correctAnswer: "Snowdon",
     incorrectAnswers: ["Cader Idris", "Pen y Fan", "Glyder Fawr"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "Which Welsh castle is known as the 'Castle of Welsh Princes'?",
     difficulty: "Medium",
     correctAnswer: "Caernarfon Castle",
     incorrectAnswers: ["Cardiff Castle", "Conwy Castle", "Harlech Castle"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "How many points is the black ball worth in snooker?",
     difficulty: "Easy",
     correctAnswer: "7",
     incorrectAnswers: ["5", "6", "8"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "Who holds the record for most World Snooker Championship wins?",
     difficulty: "Medium",
     correctAnswer: "Ronnie O'Sullivan",
     incorrectAnswers: ["Stephen Hendry", "Steve Davis", "John Higgins"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "Which golf tournament is known as 'The Masters'?",
     difficulty: "Easy",
     correctAnswer: "Augusta National",
     incorrectAnswers: ["The Open Championship", "US Open", "PGA Championship"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is the term for completing a hole one stroke under par?",
     difficulty: "Easy",
     correctAnswer: "Birdie",
     incorrectAnswers: ["Eagle", "Bogey", "Par"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is the term for the total market value of a company's shares?",
@@ -663,14 +663,14 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Structured Query Language",
     incorrectAnswers: ["Simple Query Language", "Standard Query Logic", "System Query Language"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "Which data structure operates on a LIFO principle?",
     difficulty: "Medium",
     correctAnswer: "Stack",
     incorrectAnswers: ["Queue", "Array", "Linked List"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What does ISO measure in photography?",
@@ -698,161 +698,161 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "36.5-37.5°C",
     incorrectAnswers: ["35-36°C", "38-39°C", "34-35°C"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "Which vaccine is typically given at birth?",
     difficulty: "Medium",
     correctAnswer: "Hepatitis B",
     incorrectAnswers: ["MMR", "DPT", "Polio"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the most common type of shock?",
     difficulty: "Medium",
     correctAnswer: "Hypovolemic",
     incorrectAnswers: ["Cardiogenic", "Neurogenic", "Septic"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the Glasgow Coma Scale's maximum score?",
     difficulty: "Medium",
     correctAnswer: "15",
     incorrectAnswers: ["10", "12", "20"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "Which position is recommended for preventing aspiration?",
     difficulty: "Medium",
     correctAnswer: "Fowler's position",
     incorrectAnswers: ["Supine position", "Trendelenburg position", "Prone position"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the normal respiratory rate range for adults?",
     difficulty: "Easy",
     correctAnswer: "12-20 breaths per minute",
     incorrectAnswers: ["8-10 breaths per minute", "20-30 breaths per minute", "30-40 breaths per minute"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "Which blood type is considered the universal donor?",
     difficulty: "Easy",
     correctAnswer: "O negative",
     incorrectAnswers: ["A positive", "B negative", "AB positive"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the medical term for high blood pressure?",
     difficulty: "Easy",
     correctAnswer: "Hypertension",
     incorrectAnswers: ["Hypotension", "Hyponatremia", "Hyperglycemia"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the minimum wire size for a 20-amp circuit?",
     difficulty: "Medium",
     correctAnswer: "12 AWG",
     incorrectAnswers: ["14 AWG", "10 AWG", "8 AWG"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What color wire indicates a hot wire in US residential wiring?",
     difficulty: "Easy",
     correctAnswer: "Black",
     incorrectAnswers: ["White", "Green", "Blue"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What is the maximum number of outlets allowed on a 20-amp circuit?",
     difficulty: "Medium",
     correctAnswer: "10",
     incorrectAnswers: ["8", "12", "15"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What type of conduit is most commonly used outdoors?",
     difficulty: "Medium",
     correctAnswer: "PVC",
     incorrectAnswers: ["EMT", "IMC", "RMC"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What is the required GFCI protection distance from a kitchen sink?",
     difficulty: "Medium",
     correctAnswer: "6 feet",
     incorrectAnswers: ["4 feet", "8 feet", "10 feet"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What is the standard height for electrical outlets?",
     difficulty: "Easy",
     correctAnswer: "12-18 inches",
     incorrectAnswers: ["24 inches", "6 inches", "30 inches"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What size breaker is required for an electric range?",
     difficulty: "Medium",
     correctAnswer: "50 amp",
     incorrectAnswers: ["30 amp", "40 amp", "60 amp"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "What is the standard wire color for a 240V circuit?",
     difficulty: "Medium",
     correctAnswer: "Red and Black",
     incorrectAnswers: ["White and Black", "Green and White", "Blue and Yellow"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Which team won the first Premier League title?",
     difficulty: "Medium",
     correctAnswer: "Manchester United",
     incorrectAnswers: ["Arsenal", "Liverpool", "Chelsea"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Who holds the record for most Premier League appearances?",
     difficulty: "Medium",
     correctAnswer: "Gareth Barry",
     incorrectAnswers: ["Ryan Giggs", "Frank Lampard", "James Milner"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Which stadium has the largest capacity in the Premier League?",
     difficulty: "Easy",
     correctAnswer: "Old Trafford",
     incorrectAnswers: ["Emirates Stadium", "Anfield", "Tottenham Hotspur Stadium"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Who won the first FIFA World Cup?",
     difficulty: "Medium",
     correctAnswer: "Uruguay",
     incorrectAnswers: ["Brazil", "Argentina", "Italy"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "What year was the Premier League founded?",
     difficulty: "Medium",
     correctAnswer: "1992",
     incorrectAnswers: ["1990", "1988", "1994"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Which player has won the most Premier League Golden Boots?",
     difficulty: "Medium",
     correctAnswer: "Thierry Henry",
     incorrectAnswers: ["Alan Shearer", "Harry Kane", "Mohamed Salah"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "What is the nickname of Manchester City?",
     difficulty: "Easy",
     correctAnswer: "The Citizens",
     incorrectAnswers: ["The Red Devils", "The Gunners", "The Blues"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Which musical is the longest-running in West End history?",
@@ -915,133 +915,133 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Lake Llanquihue",
     incorrectAnswers: ["Lake Villarrica", "Lake Puyehue", "Lake Ranco"],
-    category: "Chile"
+    category: "Geography",
   },
   {
     question: "Which famous Chilean poet won the Nobel Prize for Literature?",
     difficulty: "Medium",
     correctAnswer: "Pablo Neruda",
     incorrectAnswers: ["Gabriela Mistral", "Vicente Huidobro", "Pablo de Rokha"],
-    category: "Chile"
+    category: "Literature"
   },
   {
     question: "What is Chile's national animal?",
     difficulty: "Medium",
     correctAnswer: "Andean Condor",
     incorrectAnswers: ["Guanaco", "Puma", "Vicuña"],
-    category: "Chile"
+    category: "Culture"
   },
   {
     question: "What is the largest city in Chile?",
     difficulty: "Easy",
     correctAnswer: "Santiago",
     incorrectAnswers: ["Valparaíso", "Concepción", "Antofagasta"],
-    category: "Chile"
+    category: "Geography"
   },
   {
     question: "What is the traditional Welsh instrument?",
     difficulty: "Easy",
     correctAnswer: "Triple Harp",
     incorrectAnswers: ["Bagpipes", "Fiddle", "Flute"],
-    category: "Wales"
+    category: "Culture"
   },
   {
     question: "Which Welsh castle was built by Edward I?",
     difficulty: "Medium",
     correctAnswer: "Caernarfon Castle",
     incorrectAnswers: ["Cardiff Castle", "Pembroke Castle", "Raglan Castle"],
-    category: "Wales"
+    category: "History"
   },
   {
     question: "What is the highest mountain in Wales?",
     difficulty: "Easy",
     correctAnswer: "Snowdon",
     incorrectAnswers: ["Cader Idris", "Pen y Fan", "Glyder Fawr"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "Which Welsh town has the longest place name in Europe?",
     difficulty: "Hard",
     correctAnswer: "Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch",
     incorrectAnswers: ["Machynlleth", "Aberystwyth", "Pontypridd"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "What is the capital city of Wales?",
     difficulty: "Easy",
     correctAnswer: "Cardiff",
     incorrectAnswers: ["Swansea", "Newport", "Bangor"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "What is the maximum break possible in snooker without a free ball?",
     difficulty: "Easy",
     correctAnswer: "147",
     incorrectAnswers: ["150", "155", "145"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What color ball is worth 6 points in snooker?",
     difficulty: "Medium",
     correctAnswer: "Pink",
     incorrectAnswers: ["Blue", "Brown", "Green"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "Who achieved the fastest 147 break in history?",
     difficulty: "Hard",
     correctAnswer: "Ronnie O'Sullivan",
     incorrectAnswers: ["Stephen Hendry", "Mark Williams", "John Higgins"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What is the diameter of a snooker ball?",
     difficulty: "Medium",
     correctAnswer: "52.5mm",
     incorrectAnswers: ["51mm", "54mm", "50mm"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What is the standard length of a snooker table?",
     difficulty: "Medium",
     correctAnswer: "12 feet",
     incorrectAnswers: ["10 feet", "14 feet", "15 feet"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What is the standard length of a golf course in yards?",
     difficulty: "Medium",
     correctAnswer: "7,200",
     incorrectAnswers: ["6,500", "8,000", "7,800"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "How many clubs are you allowed in your golf bag?",
     difficulty: "Easy",
     correctAnswer: "14",
     incorrectAnswers: ["12", "16", "18"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is the diameter of a golf hole in inches?",
     difficulty: "Medium",
     correctAnswer: "4.25",
     incorrectAnswers: ["4", "4.5", "3.75"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is the term for a score of one over par?",
     difficulty: "Easy",
     correctAnswer: "Bogey",
     incorrectAnswers: ["Eagle", "Birdie", "Double Bogey"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "Which golf major is played at Augusta National?",
     difficulty: "Easy",
     correctAnswer: "The Masters",
     incorrectAnswers: ["US Open", "The Open Championship", "PGA Championship"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is the term for measuring a company's quick assets against its current liabilities?",
@@ -1076,35 +1076,35 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Representational State Transfer",
     incorrectAnswers: ["Remote State Transfer", "Resource State Transfer", "Remote System Transfer"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What is the time complexity of binary search?",
     difficulty: "Medium",
     correctAnswer: "O(log n)",
     incorrectAnswers: ["O(n)", "O(n log n)", "O(1)"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "Which programming paradigm does JavaScript primarily follow?",
     difficulty: "Medium",
     correctAnswer: "Object-Oriented and Functional",
     incorrectAnswers: ["Procedural", "Logic", "Structured"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What is the default port for HTTP?",
     difficulty: "Easy",
     correctAnswer: "80",
     incorrectAnswers: ["443", "8080", "3000"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What does CSS stand for?",
     difficulty: "Easy",
     correctAnswer: "Cascading Style Sheets",
     incorrectAnswers: ["Computer Style Sheets", "Creative Style System", "Coded Style Structure"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What is the term for the amount of light entering a camera?",
@@ -1174,21 +1174,21 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "95-100%",
     incorrectAnswers: ["85-90%", "80-85%", "90-92%"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What voltage does a GFCI need to trip?",
     difficulty: "Medium",
     correctAnswer: "5 milliamps",
     incorrectAnswers: ["10 milliamps", "15 milliamps", "20 milliamps"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Who won the 2024 League Cup Final?",
     difficulty: "Easy",
     correctAnswer: "Liverpool",
     incorrectAnswers: ["Chelsea", "Manchester City", "Manchester United"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Which West End musical features the song 'Memory'?",
@@ -1202,21 +1202,21 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Copper",
     incorrectAnswers: ["Wine", "Fish", "Fruit"],
-    category: "Chile"
+    category: "Geography"
   },
   {
     question: "What is Wales's most famous rugby stadium?",
     difficulty: "Easy",
     correctAnswer: "Principality Stadium",
     incorrectAnswers: ["Liberty Stadium", "Cardiff City Stadium", "Parc y Scarlets"],
-    category: "Wales"
+    category: "Sport"
   },
   {
     question: "What color is the blue ball worth in snooker?",
     difficulty: "Easy",
     correctAnswer: "5",
     incorrectAnswers: ["4", "6", "7"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What is ROI in finance?",
@@ -1230,7 +1230,7 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "JavaScript Object Notation",
     incorrectAnswers: ["Java Standard Object Notation", "JavaScript Oriented Navigation", "Java Source Object Network"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What is the minimum focusing distance?",
@@ -1251,21 +1251,21 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "60-80 mmHg",
     incorrectAnswers: ["90-100 mmHg", "40-50 mmHg", "100-120 mmHg"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What size wire is required for a 15-amp circuit?",
     difficulty: "Medium",
     correctAnswer: "14 AWG",
     incorrectAnswers: ["12 AWG", "10 AWG", "16 AWG"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Which team has won the most FA Cups?",
     difficulty: "Medium",
     correctAnswer: "Arsenal",
     incorrectAnswers: ["Manchester United", "Liverpool", "Chelsea"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Which theatre hosts 'Matilda the Musical'?",
@@ -1279,28 +1279,28 @@ export const questions = [
     difficulty: "Hard",
     correctAnswer: "Villarrica",
     incorrectAnswers: ["Ojos del Salado", "Lascar", "Calbuco"],
-    category: "Chile"
+    category: "Geography"
   },
   {
     question: "What is the Welsh word for Wales?",
     difficulty: "Medium",
     correctAnswer: "Cymru",
     incorrectAnswers: ["Cymraeg", "Gymru", "Cymry"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "What is the value of the brown ball in snooker?",
     difficulty: "Easy",
     correctAnswer: "4",
     incorrectAnswers: ["3", "5", "6"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What is the term for making a hole in one shot?",
     difficulty: "Easy",
     correctAnswer: "Hole in One",
     incorrectAnswers: ["Eagle", "Double Eagle", "Ace"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is a bear market?",
@@ -1314,7 +1314,7 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Version Control System",
     incorrectAnswers: ["Programming Language", "Database System", "Web Framework"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What does RAW mean in photography?",
@@ -1335,21 +1335,21 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Hypoglycemia",
     incorrectAnswers: ["Hyperglycemia", "Hyperlipidemia", "Hyperkalemia"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the purpose of a junction box?",
     difficulty: "Easy",
     correctAnswer: "To house wire connections",
     incorrectAnswers: ["To regulate voltage", "To measure current", "To ground circuits"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Who holds the record for most Premier League clean sheets?",
     difficulty: "Medium",
     correctAnswer: "Petr Cech",
     incorrectAnswers: ["Peter Schmeichel", "David James", "Edwin van der Sar"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "Which musical features the song 'Don't Cry For Me Argentina'?",
@@ -1370,21 +1370,21 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Red",
     incorrectAnswers: ["Green", "White", "Black"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "What is the minimum number of reds needed for a 147 break?",
     difficulty: "Medium",
     correctAnswer: "15",
     incorrectAnswers: ["12", "14", "16"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What material are golf balls primarily made of?",
     difficulty: "Medium",
     correctAnswer: "Urethane",
     incorrectAnswers: ["Rubber", "Plastic", "Leather"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is a hedge fund?",
@@ -1398,7 +1398,7 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "A point of communication with a server",
     incorrectAnswers: ["A programming language", "A database type", "A web browser"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     question: "What is a prime lens?",
@@ -1419,21 +1419,21 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Appendicitis",
     incorrectAnswers: ["Tonsillitis", "Bronchitis", "Arthritis"],
-    category: "Nursing"
+    category: "Science"
   },
   {
     question: "What is the voltage drop allowed on a branch circuit?",
     difficulty: "Hard",
     correctAnswer: "3%",
     incorrectAnswers: ["5%", "2%", "4%"],
-    category: "Electricians"
+    category: "Science"
   },
   {
     question: "Which player scored the fastest Premier League hat-trick?",
     difficulty: "Hard",
     correctAnswer: "Sadio Mané",
     incorrectAnswers: ["Alan Shearer", "Robbie Fowler", "Mohamed Salah"],
-    category: "Football"
+    category: "Sport"
   },
   {
     question: "In which year did 'We Will Rock You' open in the West End?",
@@ -1447,28 +1447,28 @@ export const questions = [
     difficulty: "Hard",
     correctAnswer: "Isla de Chiloé",
     incorrectAnswers: ["Easter Island", "Robinson Crusoe Island", "Isla Navarino"],
-    category: "Chile"
+    category: "Geography"
   },
   {
     question: "What is the Welsh national vegetable?",
     difficulty: "Medium",
     correctAnswer: "Leek",
     incorrectAnswers: ["Carrot", "Potato", "Onion"],
-    category: "Wales"
+    category: "Geography"
   },
   {
     question: "What is the width of a snooker table?",
     difficulty: "Medium",
     correctAnswer: "6 feet",
     incorrectAnswers: ["5 feet", "7 feet", "8 feet"],
-    category: "Snooker"
+    category: "Sport"
   },
   {
     question: "What is the standard weight of a golf ball in ounces?",
     difficulty: "Hard",
     correctAnswer: "1.62",
     incorrectAnswers: ["1.50", "1.75", "2.00"],
-    category: "Golf"
+    category: "Sport"
   },
   {
     question: "What is a blue chip stock?",
@@ -1482,7 +1482,7 @@ export const questions = [
     difficulty: "Easy",
     correctAnswer: "Domain Name System",
     incorrectAnswers: ["Dynamic Network Service", "Data Network Storage", "Digital Naming Service"],
-    category: "Software Engineering"
+    category: "Science"
   },
   {
     "question": "Who painted 'The Persistence of Memory'?",
@@ -2224,161 +2224,154 @@ export const questions = [
     difficulty: "Medium",
     correctAnswer: "Belarusian and Russian",
     incorrectAnswers: ["Only Belarusian", "Only Russian", "Belarusian and Ukrainian"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "Which famous artist from Belarus painted 'The Birthday'?",
     difficulty: "Medium",
     correctAnswer: "Marc Chagall",
     incorrectAnswers: ["Chaim Soutine", "Leon Bakst", "Ossip Zadkine"],
-    category: "Belarus Culture"
+    category: "Art"
   },
   {
     question: "What is the national flower of Belarus?",
     difficulty: "Medium",
     correctAnswer: "Cornflower",
     incorrectAnswers: ["Rose", "Lily", "Tulip"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "Which UNESCO World Heritage site is located in Belarus?",
     difficulty: "Medium",
     correctAnswer: "Mir Castle Complex",
     incorrectAnswers: ["Peterhof Palace", "Catherine Palace", "Winter Palace"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "What is the traditional Belarusian folk dance?",
     difficulty: "Medium",
     correctAnswer: "Lyavonikha",
     incorrectAnswers: ["Hopak", "Kalinka", "Trepak"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "What is a traditional Belarusian dish made from grated potatoes?",
     difficulty: "Medium",
     correctAnswer: "Draniki",
     incorrectAnswers: ["Borscht", "Pelmeni", "Vareniki"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "Which famous Belarusian author wrote 'War to the Death'?",
     difficulty: "Hard",
     correctAnswer: "Vasil Bykaŭ",
     incorrectAnswers: ["Yakub Kolas", "Yanka Kupala", "Ivan Melezh"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "What is the largest lake in Belarus?",
     difficulty: "Medium",
     correctAnswer: "Lake Narach",
     incorrectAnswers: ["Lake Svityaz", "Lake Chervonoye", "Lake Lukoml"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "What is the national animal of Belarus?",
     difficulty: "Medium",
     correctAnswer: "European Bison",
     incorrectAnswers: ["Brown Bear", "Wolf", "Lynx"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "Which traditional Belarusian festival celebrates the summer solstice?",
     difficulty: "Medium",
     correctAnswer: "Kupalle",
     incorrectAnswers: ["Maslenitsa", "Kaliady", "Dazhynki"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "What is the name of the largest forest in Belarus?",
     difficulty: "Medium",
     correctAnswer: "Belovezhskaya Pushcha",
     incorrectAnswers: ["Naliboki Forest", "Pripyat Forest", "Braslav Forest"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "What is the traditional Belarusian musical instrument similar to a flute?",
     difficulty: "Medium",
     correctAnswer: "Dudka",
     incorrectAnswers: ["Balalaika", "Domra", "Gusli"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "Which Belarusian city was a major center of Jewish culture before WWII?",
     difficulty: "Hard",
     correctAnswer: "Vitebsk",
     incorrectAnswers: ["Brest", "Grodno", "Minsk"],
-    category: "Belarus"
-  },
-  {
-    question: "What is the main religion in Belarus?",
-    difficulty: "Medium",
-    correctAnswer: "Eastern Orthodox Christianity",
-    incorrectAnswers: ["Roman Catholicism", "Islam", "Judaism"],
-    category: "Belarus"
+    category: "History"
   },
   {
     question: "What colors are on the Belarusian flag?",
     difficulty: "Easy",
     correctAnswer: "Red, Green and White",
     incorrectAnswers: ["Blue and Yellow", "Red and White only", "Green and White only"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "Which river is the longest in Belarus?",
     difficulty: "Medium",
     correctAnswer: "Dnieper",
     incorrectAnswers: ["Pripyat", "Western Dvina", "Nemunas"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "What is the traditional Belarusian wedding bread called?",
     difficulty: "Hard",
     correctAnswer: "Karavai",
     incorrectAnswers: ["Babka", "Draniki", "Khleb"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "Which famous Belarusian poet wrote 'The Banner'?",
     difficulty: "Hard",
     correctAnswer: "Yanka Kupala",
     incorrectAnswers: ["Yakub Kolas", "Maksim Bahdanovich", "Vasil Bykaŭ"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "What is the name of the main opera house in Minsk?",
     difficulty: "Medium",
     correctAnswer: "National Academic Bolshoi Opera and Ballet Theatre",
     incorrectAnswers: ["Minsk Opera House", "Belarus State Opera", "Royal Opera House Minsk"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "What is the traditional Belarusian drink made from fermented bread?",
     difficulty: "Medium",
     correctAnswer: "Kvass",
     incorrectAnswers: ["Kompot", "Medovukha", "Sbiten"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "Which Belarusian city was a major center of the Radziwill family?",
     difficulty: "Hard",
     correctAnswer: "Nesvizh",
     incorrectAnswers: ["Minsk", "Grodno", "Brest"],
-    category: "Belarus History"
+    category: "History"
   },
   {
     question: "What is the name of the largest technology park in Belarus?",
     difficulty: "Medium",
     correctAnswer: "Hi-Tech Park",
     incorrectAnswers: ["Belarus Tech Valley", "Minsk Innovation Center", "Digital City Belarus"],
-    category: "Belarus"
+    category: "Geography"
   },
   {
     question: "What is the traditional Belarusian embroidery pattern called?",
     difficulty: "Hard",
     correctAnswer: "Vyshyvanka",
     incorrectAnswers: ["Rushnik", "Pysanka", "Malyavanka"],
-    category: "Belarus Culture"
+    category: "Culture"
   },
   {
     question: "Which medieval trade route passed through Belarus?",
