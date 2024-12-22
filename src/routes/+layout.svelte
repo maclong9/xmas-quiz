@@ -1,6 +1,6 @@
 <script>
   import { page } from "$app/stores";
-  import { IconBrandGithub, IconChristmasTree } from "@tabler/icons-svelte";
+  import { IconChristmasTree } from "@tabler/icons-svelte";
   import "../app.css";
   let { children } = $props();
 </script>
@@ -27,11 +27,9 @@
       rel="noopener noreferrer"
       class="text-xs text-neutral-500 flex items-center space-x-0.5"
     >
-      <IconBrandGithub class="w-5 h-5" />
       <span> Source Code </span>
     </a>
     <span class="text-xs text-neutral-500">
-      © 2024
       <a
         href="https://github.com/maclong9"
         target="_blank"
