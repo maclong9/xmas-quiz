@@ -1,4 +1,5 @@
 <script>
+  import Snowfall from "$lib/components/Snowfall.svelte";
   import "../app.css";
   let { children } = $props();
 </script>
@@ -40,4 +41,5 @@
       </a>
     </span>
   </footer>
+  <Snowfall />
 </div>
