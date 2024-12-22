@@ -113,11 +113,15 @@
       <div class="mt-4 min-h-[272px] flex flex-col justify-end">
         {#each answers as answer, i (answer)}
           <button
-            class={selectedAnswer === answer
-              ? answer === currentQuestion.correctAnswer
-                ? "bg-green-500"
-                : "bg-red-500"
-              : "border-gray-300"}
+            class={`${
+              selectedAnswer === answer
+                ? answer === currentQuestion.correctAnswer
+                  ? "bg-green-500"
+                  : "bg-red-500"
+                : "border-gray-300"
+            } ${
+              answer === currentQuestion.correctAnswer ? "border-green-500" : ""
+            }`}
             onclick={() => handleAnswer(answer)}
             disabled={selectedAnswer !== null}
             in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}
