@@ -3,6 +3,6 @@
 @import 'tailwindcss/utilities';
 
 button, .button {
-  @apply block w-full p-4 text-wrap text-white my-2 text-center font-bold rounded-lg
+  @apply block w-full px-4 py-2 text-wrap text-white my-2 text-center font-bold rounded-lg
     bg-black transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
 }

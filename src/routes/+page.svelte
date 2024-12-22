@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { IconBrain } from "@tabler/icons-svelte";
   import { fade, fly, scale } from "svelte/transition";
 </script>
 
@@ -11,10 +10,6 @@
     class="text-center space-y-6"
     in:fly={{ y: 20, duration: 500, delay: 200 }}
   >
-    <div class="flex justify-center">
-      <IconBrain size={56} class="text-primary" />
-    </div>
-
     <h1 class="text-4xl font-bold mb-4">Welcome to the Xmas Quiz!</h1>
 
     <p class="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">

@@ -3,7 +3,6 @@
       questions as initialQuestions,
       shuffleArray,
   } from "$lib/questions.js";
-  import { IconCalendarQuestion, IconTrophy } from "@tabler/icons-svelte";
   import { flip } from "svelte/animate";
   import { fade, fly, scale } from "svelte/transition";
 
@@ -79,41 +78,40 @@
   <div class="p-4 h-full" in:fade>
     <div class="flex justify-between">
       <div class="flex items-center font-bold text-lg">
-        <IconCalendarQuestion class="mr-0.5" />
+        <span class="text-xl mr-0.5">🗓️</span>
         {currentQuestionIndex + 1}/{questions.length}
       </div>
       <div class="flex items-center font-bold text-lg">
-        <IconTrophy class="mr-0.5" />
+        <span class="text-xl mr-0.5">🏆</span>
         {score}
       </div>
     </div>
 
-    <div class="flex flex-col h-full justify-between">
-      <div
-        class="w-full text-sm flex items-center justify-between pt-10"
-        in:fly={{ x: -50, duration: 500 }}
+    <div
+      class="w-full text-sm flex items-center justify-between pt-10"
+      in:fly={{ x: -50, duration: 500 }}
+    >
+      <span class="font-bold">
+        {currentQuestion.category}
+      </span>
+      <span class="font-bold">
+        {currentQuestion.difficulty}
+      </span>
+    </div>
+
+    <div class="flex flex-col text-center">
+      <h2
+        class="text-2xl font-bold mt-5"
+        in:fly={{ y: 20, duration: 500, delay: 200 }}
       >
-        <span class="font-bold">
-          {currentQuestion.category}
-        </span>
-        <span class="font-bold">
-          {currentQuestion.difficulty}
-        </span>
-      </div>
+        {currentQuestion.question}?
+      </h2>
+    </div>
 
-      <div class="flex flex-col text-center">
-        <h2
-          class="text-2xl font-bold"
-          in:fly={{ y: 20, duration: 500, delay: 200 }}
-        >
-          {currentQuestion.question}?
-        </h2>
-      </div>
-
-      <div class="mt-4 min-h-[272px] flex flex-col justify-end">
-        {#each answers as answer, i (answer)}
-          <button
-            class={`border-4 border-transparent
+    <div class="mt-4 min-h-[272px] flex flex-col justify-end">
+      {#each answers as answer, i (answer)}
+        <button
+          class={`border-4 border-transparent
           ${
             selectedAnswer === answer
               ? answer === currentQuestion.correctAnswer
@@ -126,16 +124,15 @@
               ? "!border-green-500"
               : ""
           }`}
-            onclick={() => handleAnswer(answer)}
-            disabled={selectedAnswer !== null}
-            in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}
-            animate:flip
-          >
-            {answer.toString().charAt(0).toUpperCase() +
-              answer.toString().slice(1)}
-          </button>
-        {/each}
-      </div>
+          onclick={() => handleAnswer(answer)}
+          disabled={selectedAnswer !== null}
+          in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}
+          animate:flip
+        >
+          {answer.toString().charAt(0).toUpperCase() +
+            answer.toString().slice(1)}
+        </button>
+      {/each}
     </div>
   </div>
 {/if}
