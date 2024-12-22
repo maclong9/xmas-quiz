@@ -103,7 +103,7 @@
 
       <div class="flex flex-col text-center">
         <h2
-          class="text-3xl font-bold"
+          class="text-2xl font-bold"
           in:fly={{ y: 20, duration: 500, delay: 200 }}
         >
           {currentQuestion.question}?
@@ -113,14 +113,14 @@
       <div class="mt-4 min-h-[272px] flex flex-col justify-end">
         {#each answers as answer, i (answer)}
           <button
-            class={`border-2 border-transparent ${
-              selectedAnswer === answer
+            class={`border-4 border-transparent
+            ${ selectedAnswer === answer
                 ? answer === currentQuestion.correctAnswer
                   ? "bg-green-500"
                   : "bg-red-500"
                 : ""
             }
-            ${questionAnswered && answer === currentQuestion.correctAnswer && "border-4 border-green-500"}`}
+            ${questionAnswered && answer === currentQuestion.correctAnswer.toString() && "border-green-500"}`}
             onclick={() => handleAnswer(answer)}
             disabled={selectedAnswer !== null}
             in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}
