@@ -4,5 +4,5 @@
 
 button, .button {
   @apply block w-full p-4 text-white my-2 text-center font-bold rounded-lg
-    bg-black;
+    bg-black transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
 }

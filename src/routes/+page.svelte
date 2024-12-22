@@ -25,7 +25,7 @@
 
     <a
       href="/game"
-      class="button inline-flex items-center justify-center px-8 py-4 text-lg font-medium transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      class="button"
       in:scale={{ duration: 400, delay: 500, start: 0.8 }}
     >
       Start Game

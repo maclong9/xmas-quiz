@@ -1,5 +1,4 @@
 <script>
-  import { page } from "$app/stores";
   import { IconChristmasTree } from "@tabler/icons-svelte";
   import "../app.css";
   let { children } = $props();
@@ -12,7 +11,7 @@
 
 <div class="h-screen max-h-screen max-w-screen overflow-hidden flex flex-col">
   <header
-    class={`flex flex-col justify-center items-center p-4 ${$page.url.pathname === "/" ? "" : ""}`}
+    class="flex flex-col justify-center items-center p-4"
   >
     <IconChristmasTree class="w-16 h-16" />
     <h1 class="text-2xl font-bold">Xmas Quiz</h1>
