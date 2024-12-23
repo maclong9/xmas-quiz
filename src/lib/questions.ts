@@ -1411,7 +1411,8 @@ export const questions: Question[] = [
     question: "What is an MVP in software development",
     difficulty: "Easy",
     correctAnswer: "Minimum Viable Product",
-    incorrectAnswer: ["Most Valuable Player", "Many Variants Perfected", "My Versatile Plugin"]
+    incorrectAnswers: ["Most Valuable Player", "Many Variants Perfected", "My Versatile Plugin"],
+    category: "Science"
   },
   {
     question: "What is the medical term for inflammation of the appendix?",
