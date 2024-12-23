@@ -1,13 +1,10 @@
 <script lang="ts">
-  import {
-      questions as initialQuestions,
-      shuffleArray,
-
-      type Question
-  } from "$lib/questions.js";
+  import { questions as initialQuestions } from "$lib/questions.js";
+  import { cn, shuffleArray } from "$lib/utils.js";
   import { flip } from "svelte/animate";
   import { fade, fly, scale } from "svelte/transition";
 
+  // State
   let {
     questions,
     currentQuestionIndex,
@@ -20,10 +17,11 @@
     currentQuestionIndex: 0,
     score: 0,
     gameOver: false,
-    selectedAnswer: "",
+    selectedAnswer: null,
     questionAnswered: false,
   });
 
+  // Computed values
   let currentQuestion = $derived(questions[currentQuestionIndex]);
   let answers = $derived(
     [
@@ -32,24 +30,39 @@
     ].sort(),
   );
 
-  const handleAnswer = (answer: string): void => {
+  // Methods
+  function handleAnswer(answer: null): void {
     questionAnswered = true;
     selectedAnswer = answer;
+    const isCorrect = answer === currentQuestion.correctAnswer;
 
-    if (answer === currentQuestion.correctAnswer) {
-      score += { Easy: 1, Medium: 2, Hard: 3 }[currentQuestion.difficulty as Question["difficulty"]] || 0;
+    if (isCorrect) {
+      let points = 0;
+      switch (currentQuestion.difficulty) {
+        case "Easy":
+          points = 1;
+          break;
+        case "Medium":
+          points = 2;
+          break;
+        case "Hard":
+          points = 3;
+          break;
+      }
+      score += points;
     }
 
     setTimeout(() => {
-      if (currentQuestionIndex + 1 < questions.length) {
-        currentQuestionIndex++;
+      const nextQuestionIndex = currentQuestionIndex + 1;
+      if (nextQuestionIndex < questions.length) {
+        currentQuestionIndex = nextQuestionIndex;
         questionAnswered = false;
-        selectedAnswer = "";
+        selectedAnswer = null;
       } else {
         gameOver = true;
       }
     }, 2000);
-  };
+  }
 </script>
 
 {#if gameOver}
@@ -69,6 +82,7 @@
     </a>
   </div>
 {:else}
+  <!-- Game User Interface -->
   <div class="p-4 h-full" in:fade>
     <div class="flex justify-between">
       <div class="flex items-center font-bold text-lg">
@@ -81,6 +95,7 @@
       </div>
     </div>
 
+    <!-- Question Details -->
     <div
       class="w-full text-sm flex items-center justify-between pt-10"
       in:fly={{ x: -50, duration: 500 }}
@@ -93,6 +108,7 @@
       </span>
     </div>
 
+    <!-- Question Text -->
     <div class="flex flex-col text-center">
       <h2
         class="text-2xl font-bold mt-5"
@@ -102,29 +118,22 @@
       </h2>
     </div>
 
+    <!-- Answer Buttons -->
     <div class="mt-4 min-h-[272px] flex flex-col justify-end">
       {#each answers as answer, i (answer)}
         <button
-          class={`border-4 border-transparent
-          ${
-            selectedAnswer === answer
-              ? answer === currentQuestion.correctAnswer
-                ? "bg-green-500"
-                : "bg-red-500"
-              : ""
-          }
-          ${
-            questionAnswered && answer === currentQuestion.correctAnswer
-              ? "!border-green-500"
-              : ""
-          }`}
+          class={cn(
+            "border-4 border-transparent",
+            selectedAnswer === answer && answer === currentQuestion.correctAnswer && "bg-green-500",
+            selectedAnswer === answer && answer !== currentQuestion.correctAnswer && "bg-red-500",
+            questionAnswered && answer === currentQuestion.correctAnswer && "!border-green-500"
+          )}
           onclick={() => handleAnswer(answer)}
           disabled={selectedAnswer !== null}
           in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}
           animate:flip
         >
-          {answer.toString().charAt(0).toUpperCase() +
-            answer.toString().slice(1)}
+          {answer.toString().charAt(0).toUpperCase() + answer.toString().slice(1)}
         </button>
       {/each}
     </div>
