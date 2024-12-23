@@ -10,12 +10,10 @@
     class="text-center space-y-6"
     in:fly={{ y: 20, duration: 500, delay: 200 }}
   >
-    <h1 class="text-4xl font-bold mb-4">Welcome to the Xmas Quiz!</h1>
+    <h1 class="text-4xl font-bold mb-4">Yana's Version!</h1>
 
     <p class="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">
-      To save the time we spend every year searching through all the different
-      sites and packs of cards, I have created a quiz app that has a great
-      selection of questions for everyone to enjoy!
+      Filled with questions related to cats, Sabrina Carpenter, witches and Belarus, Enjoy!
     </p>
 
     <a
