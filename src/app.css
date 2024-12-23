@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-button, .button {
-  @apply block w-full px-4 py-2 text-wrap text-white my-2 text-center font-bold rounded-lg
-    bg-black transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+button,
+.button {
+	@apply my-2 block w-full transform text-wrap rounded-lg bg-black px-4 py-2 text-center font-bold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg;
 }
