@@ -11,13 +11,13 @@
 
 <div class="h-screen max-w-screen overflow-x-hidden flex flex-col">
   <header
-    class="flex flex-col justify-center items-center p-4 max-h-[12rem]"
+    class="flex flex-col justify-center items-center p-4 pb-0 max-h-[12rem]"
   >
     <span class="text-7xl">
       🎄
     </span>
     <h1 class="text-2xl font-bold">Xmas Quiz</h1>
-    <img src="/lights.gif" alt="Christmas lights" class="w-1/3 -mt-[3.6rem]" />
+    <img src="/lights.gif" alt="Christmas lights" class="w-1/3 -my-[3.6rem]" />
   </header>
   <main class="flex-1 p-4">
     {@render children()}
