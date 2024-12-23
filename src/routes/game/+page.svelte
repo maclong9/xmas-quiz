@@ -2,19 +2,28 @@
   import {
       questions as initialQuestions,
       shuffleArray,
+
+      type Question
   } from "$lib/questions.js";
   import { flip } from "svelte/animate";
   import { fade, fly, scale } from "svelte/transition";
 
-  // State
-  let questions = $state(shuffleArray(initialQuestions));
-  let currentQuestionIndex = $state(0);
-  let score = $state(0);
-  let gameOver = $state(false);
-  let selectedAnswer = $state(null);
-  let questionAnswered = $state(false);
+  let {
+    questions,
+    currentQuestionIndex,
+    score,
+    gameOver,
+    selectedAnswer,
+    questionAnswered,
+  } = $state({
+    questions: shuffleArray(initialQuestions),
+    currentQuestionIndex: 0,
+    score: 0,
+    gameOver: false,
+    selectedAnswer: "",
+    questionAnswered: false,
+  });
 
-  // Computed values
   let currentQuestion = $derived(questions[currentQuestionIndex]);
   let answers = $derived(
     [
@@ -23,39 +32,24 @@
     ].sort(),
   );
 
-  // Methods
-  function handleAnswer(answer: null): void {
+  const handleAnswer = (answer: string): void => {
     questionAnswered = true;
     selectedAnswer = answer;
-    const isCorrect = answer === currentQuestion.correctAnswer;
 
-    if (isCorrect) {
-      let points = 0;
-      switch (currentQuestion.difficulty) {
-        case "Easy":
-          points = 1;
-          break;
-        case "Medium":
-          points = 2;
-          break;
-        case "Hard":
-          points = 3;
-          break;
-      }
-      score += points;
+    if (answer === currentQuestion.correctAnswer) {
+      score += { Easy: 1, Medium: 2, Hard: 3 }[currentQuestion.difficulty as Question["difficulty"]] || 0;
     }
 
     setTimeout(() => {
-      const nextQuestionIndex = currentQuestionIndex + 1;
-      if (nextQuestionIndex < questions.length) {
-        currentQuestionIndex = nextQuestionIndex;
+      if (currentQuestionIndex + 1 < questions.length) {
+        currentQuestionIndex++;
         questionAnswered = false;
-        selectedAnswer = null;
+        selectedAnswer = "";
       } else {
         gameOver = true;
       }
     }, 2000);
-  }
+  };
 </script>
 
 {#if gameOver}

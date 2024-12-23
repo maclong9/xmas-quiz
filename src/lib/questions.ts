@@ -6,9 +6,9 @@ export const shuffleArray = (array: any[]) => {
   return array;
 };
 
-interface Question {
+export interface Question {
   question: string;
-  difficulty: string;
+  difficulty: 'Easy' | 'Medium' | 'Hard';
   correctAnswer: string | boolean;
   incorrectAnswers: string[] | boolean[];
   category: string;
@@ -182,13 +182,6 @@ export const questions: Question[] = [
     correctAnswer: "Albert Einstein",
     incorrectAnswers: ["Isaac Newton", "Stephen Hawking", "Niels Bohr"],
     category: "Science"
-  },
-  {
-    question: "What is the smallest prime number?",
-    difficulty: "Easy",
-    correctAnswer: "2",
-    incorrectAnswers: ["1", "3", "0"],
-    category: "Mathematics"
   },
   {
     question: "Which planet is closest to the Sun?",
@@ -2134,13 +2127,6 @@ export const questions: Question[] = [
     correctAnswer: "Vincent van Gogh",
     incorrectAnswers: ["Paul Gauguin", "Paul Cézanne", "Claude Monet"],
     category: "Art"
-  },
-  {
-    question: "What is the smallest prime number?",
-    difficulty: "Easy",
-    correctAnswer: "2",
-    incorrectAnswers: ["1", "0", "3"],
-    category: "Mathematics"
   },
   {
     question: "Which element has the atomic number 92?",
