@@ -4,5 +4,5 @@
 
 button,
 .button {
-	@apply my-2 block w-full transform text-wrap rounded-lg bg-black px-4 py-2 text-center font-bold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg;
+	@apply my-2 block w-full transform text-wrap rounded-lg bg-black px-4 py-2 text-center font-bold transition-all duration-200 hover:scale-105 hover:shadow-lg;
 }

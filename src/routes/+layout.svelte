@@ -4,8 +4,7 @@
 	let { children } = $props();
 </script>
 
-<Snowfall />
-<div class="max-w-screen flex h-screen flex-col overflow-x-hidden">
+<div class="bg-christmas flex h-screen max-w-full flex-col overflow-x-hidden text-white">
 	<!-- Header -->
 	<header class="flex max-h-[12rem] flex-col items-center justify-center p-4 pb-0">
 		<span class="text-7xl"> 🎄 </span>
@@ -19,17 +18,11 @@
 	</main>
 
 	<!-- Footer -->
-	<footer class="flex items-center justify-between p-4">
-		<a
-			href="https://github.com/maclong9/xmas-quiz"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="flex items-center space-x-0.5 text-xs text-neutral-500"
-		>
-			<span>Source Code</span>
+	<footer class="flex items-center justify-between p-4 text-xs">
+		<a href="https://github.com/maclong9/xmas-quiz" target="_blank" rel="noopener noreferrer">
+			Source Code
 		</a>
-		<span class="text-xs text-neutral-500">
-			<a href="https://github.com/maclong9" target="_blank" rel="noopener noreferrer">Mac Long</a>
-		</span>
+		<a href="https://github.com/maclong9" target="_blank" rel="noopener noreferrer">Mac Long</a>
 	</footer>
+	<Snowfall />
 </div>

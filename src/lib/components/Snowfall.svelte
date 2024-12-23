@@ -1,9 +1,8 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
-	// a bunch of variables defining the snow and how it falls
-	const SNOWFLAKES_COUNT = 75; // on firefox should go smoothly up to 750
-	const SNOWFLAKE_MIN_SCALE = 0.1;
+	const SNOWFLAKES_COUNT = 75;
+	const SNOWFLAKE_MIN_SCALE = 0.2;
 	const MELTING_SPEED = 1.12;
 	const WIND_FORCE = 0.01;
 	const FALL_SPEED = 0.15;
@@ -12,8 +11,16 @@
 
 	const MS_BETWEEN_FRAMES = 1000 / TARGET_FPS;
 
-	// this function generates the random configuration with all necessary values
-	function randomSnowflakeConfig(i) {
+	interface Snowflake {
+		scale: number;
+		x: number;
+		y: number;
+		rotation: number;
+		snowIcon: string;
+		opacity: number;
+	}
+
+	function randomSnowflakeConfig(i: number): Snowflake {
 		return {
 			scale: SNOWFLAKE_MIN_SCALE + Math.random() * (1 - SNOWFLAKE_MIN_SCALE),
 			x: -20 + Math.random() * 120,
@@ -24,17 +31,16 @@
 		};
 	}
 
-	// actially generating the snowflakes
-	let snowflakes = new Array(SNOWFLAKES_COUNT)
-		.fill()
+	let snowflakes: Snowflake[] = new Array(SNOWFLAKES_COUNT)
+		.fill(undefined)
 		.map((_, i) => randomSnowflakeConfig(i))
 		.sort((a, b) => a.scale - b.scale);
 
-	// in onMount we define the loop function and start our animationFrame loop.
-	onMount(async () => {
-		let frame, lastTime;
+	onMount(() => {
+		let frame: number;
+		let lastTime: number;
 
-		function loop(timestamp) {
+		function loop(timestamp: number) {
 			frame = requestAnimationFrame(loop);
 
 			const elapsed = timestamp - lastTime;
@@ -63,50 +69,19 @@
 			});
 		}
 
-		loop();
+		loop(0);
 
 		return () => cancelAnimationFrame(frame);
 	});
 </script>
 
-<div class="snowframe" aria-hidden="true">
+<div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
 	{#each snowflakes as flake}
 		<div
-			class="snowflake"
+			class="absolute z-[1000] overflow-hidden font-sans text-[1.2rem] leading-[1.2rem]"
 			style={`opacity: ${flake.opacity}; transform: scale(${flake.scale}) rotate(${flake.rotation}deg); left: ${flake.x}%; top: calc(${flake.y}% - ${flake.scale}rem)`}
 		>
 			{flake.snowIcon}
 		</div>
 	{/each}
 </div>
-
-<style>
-	:global(body) {
-		min-height: 100%;
-	}
-
-	:global(html) {
-		height: 100%;
-	}
-
-	.snowflake {
-		color: #fff;
-		font-size: 1.2rem;
-		line-height: 1.2rem;
-		font-family: Arial, sans-serif;
-		text-shadow: 0 0 5px #000;
-		position: absolute;
-		z-index: 1000;
-		overflow: hidden;
-	}
-
-	.snowframe {
-		pointer-events: none;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		overflow: hidden;
-	}
-</style>

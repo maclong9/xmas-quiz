@@ -48,7 +48,7 @@
 
 {#if gameOver}
 	<div
-		class="flex flex-col items-center justify-center space-y-16 p-4 text-center"
+		class="flex flex-col items-center justify-center space-y-16 bg-red-700 p-4 text-center"
 		in:fly={{ y: 50, duration: 500 }}
 		out:fade
 	>
@@ -56,7 +56,9 @@
 		<p class="text-2xl font-semibold" in:scale={{ delay: 600, duration: 500 }}>
 			Your final score is: {score}
 		</p>
-		<a href="/" class="button" in:scale={{ delay: 900, duration: 500 }}>Play Again</a>
+		<a href="/" class="button bg-green-500 text-white" in:scale={{ delay: 900, duration: 500 }}
+			>Play Again</a
+		>
 	</div>
 {:else}
 	<!-- Game User Interface -->

@@ -168,8 +168,8 @@ export const questions: Question[] = [
 	{
 		question: 'Which country has the largest population?',
 		difficulty: 'Easy',
-		correctAnswer: 'India',
-		incorrectAnswers: ['China', 'United States', 'Indonesia'],
+		correctAnswer: 'China',
+		incorrectAnswers: ['India', 'United States', 'Indonesia'],
 		category: 'Geography'
 	},
 	{
@@ -3570,5 +3570,1006 @@ export const questions: Question[] = [
 		correctAnswer: 'Alexander Fleming',
 		incorrectAnswers: ['Louis Pasteur', 'Robert Koch', 'Joseph Lister'],
 		category: 'Science'
-	}
+	},
+	{
+		question: "Who played the lead role in the 2023 film 'The Last Duel'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Jodie Comer',
+		incorrectAnswers: ['Margot Robbie', 'Emma Stone', 'Scarlett Johansson'],
+		category: 'Movies'
+	},
+	{
+		question: "Which musical features the song 'Cell Block Tango'?",
+		difficulty: 'Easy',
+		correctAnswer: 'Chicago',
+		incorrectAnswers: ['Cabaret', 'Rent', 'Wicked'],
+		category: 'Musical Theatre'
+	},
+	{
+		question: "Who wrote the musical 'Hamilton'?",
+		difficulty: 'Easy',
+		correctAnswer: 'Lin-Manuel Miranda',
+		incorrectAnswers: ['Andrew Lloyd Webber', 'Stephen Sondheim', 'Jonathan Larson'],
+		category: 'Musical Theatre'
+	},
+	{
+		question: 'Which TV series features the character Villanelle?',
+		difficulty: 'Medium',
+		correctAnswer: 'Killing Eve',
+		incorrectAnswers: ['Fleabag', 'The Crown', 'Bodyguard'],
+		category: 'Television'
+	},
+	{
+		question: "Who released the album '25' in 2015?",
+		difficulty: 'Easy',
+		correctAnswer: 'Adele',
+		incorrectAnswers: ['Beyoncé', 'Taylor Swift', 'Rihanna'],
+		category: 'Music'
+	},
+	{
+		question: "Which musical features the song 'Candy Store'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Heathers',
+		incorrectAnswers: ['Mean Girls', 'Legally Blonde', 'Spring Awakening'],
+		category: 'Musical Theatre'
+	},
+	{
+		question: "Who wrote the novel 'Gone Girl'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Gillian Flynn',
+		incorrectAnswers: ['Paula Hawkins', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series is based on the true crime story of the Menendez brothers?',
+		difficulty: 'Medium',
+		correctAnswer: 'Law & Order True Crime',
+		incorrectAnswers: ['Mindhunter', 'Making a Murderer', 'The People v. O.J. Simpson'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2021 film 'Dune'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Denis Villeneuve',
+		incorrectAnswers: ['Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the song 'Blinding Lights' in 2019?",
+		difficulty: 'Easy',
+		correctAnswer: 'The Weeknd',
+		incorrectAnswers: ['Drake', 'Post Malone', 'Justin Bieber'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Road'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Cormac McCarthy',
+		incorrectAnswers: ['Stephen King', 'George Orwell', 'Margaret Atwood'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series features the character Eleven?',
+		difficulty: 'Easy',
+		correctAnswer: 'Stranger Things',
+		incorrectAnswers: ['The Umbrella Academy', 'Dark', 'The Witcher'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2020 film 'Tenet'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Christopher Nolan',
+		incorrectAnswers: ['Quentin Tarantino', 'Steven Spielberg', 'Martin Scorsese'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the album 'Lemonade' in 2016?",
+		difficulty: 'Easy',
+		correctAnswer: 'Beyoncé',
+		incorrectAnswers: ['Rihanna', 'Adele', 'Taylor Swift'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Girl on the Train'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Paula Hawkins',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series is based on the true crime story of Gypsy Rose Blanchard?',
+		difficulty: 'Medium',
+		correctAnswer: 'The Act',
+		incorrectAnswers: ['Mindhunter', 'Making a Murderer', 'The People v. O.J. Simpson'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2019 film 'Once Upon a Time in Hollywood'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Quentin Tarantino',
+		incorrectAnswers: ['Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the song 'Shape of You' in 2017?",
+		difficulty: 'Easy',
+		correctAnswer: 'Ed Sheeran',
+		incorrectAnswers: ['Justin Bieber', 'Shawn Mendes', 'Bruno Mars'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'Big Little Lies'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Liane Moriarty',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series features the character Raymond Reddington?',
+		difficulty: 'Medium',
+		correctAnswer: 'The Blacklist',
+		incorrectAnswers: ['Breaking Bad', 'Better Call Saul', 'True Detective'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2018 film 'A Star is Born'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Bradley Cooper',
+		incorrectAnswers: ['Clint Eastwood', 'Steven Spielberg', 'Martin Scorsese'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the album 'Future Nostalgia' in 2020?",
+		difficulty: 'Easy',
+		correctAnswer: 'Dua Lipa',
+		incorrectAnswers: ['Ariana Grande', 'Taylor Swift', 'Billie Eilish'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Night Circus'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Erin Morgenstern',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series is based on the true crime story of the Central Park Five?',
+		difficulty: 'Medium',
+		correctAnswer: 'When They See Us',
+		incorrectAnswers: ['Mindhunter', 'Making a Murderer', 'The People v. O.J. Simpson'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2017 film 'Get Out'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Jordan Peele',
+		incorrectAnswers: ['Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the song 'Bad Guy' in 2019?",
+		difficulty: 'Easy',
+		correctAnswer: 'Billie Eilish',
+		incorrectAnswers: ['Ariana Grande', 'Taylor Swift', 'Dua Lipa'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Goldfinch'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Donna Tartt',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series features the character Ruth Langmore?',
+		difficulty: 'Medium',
+		correctAnswer: 'Ozark',
+		incorrectAnswers: ['Breaking Bad', 'Better Call Saul', 'True Detective'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2016 film 'La La Land'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Damien Chazelle',
+		incorrectAnswers: ['Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the album 'After Hours' in 2020?",
+		difficulty: 'Easy',
+		correctAnswer: 'The Weeknd',
+		incorrectAnswers: ['Drake', 'Post Malone', 'Justin Bieber'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Underground Railroad'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Colson Whitehead',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series is based on the true crime story of the Golden State Killer?',
+		difficulty: 'Medium',
+		correctAnswer: "I'll Be Gone in the Dark",
+		incorrectAnswers: ['Mindhunter', 'Making a Murderer', 'The People v. O.J. Simpson'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2015 film 'Mad Max: Fury Road'?",
+		difficulty: 'Medium',
+		correctAnswer: 'George Miller',
+		incorrectAnswers: ['Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the song 'Levitating' in 2020?",
+		difficulty: 'Easy',
+		correctAnswer: 'Dua Lipa',
+		incorrectAnswers: ['Ariana Grande', 'Taylor Swift', 'Billie Eilish'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Martian'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Andy Weir',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series features the character June Osborne?',
+		difficulty: 'Medium',
+		correctAnswer: "The Handmaid's Tale",
+		incorrectAnswers: ['Breaking Bad', 'Better Call Saul', 'True Detective'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2014 film 'Interstellar'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Christopher Nolan',
+		incorrectAnswers: ['Quentin Tarantino', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the album 'Fine Line' in 2019?",
+		difficulty: 'Easy',
+		correctAnswer: 'Harry Styles',
+		incorrectAnswers: ['Shawn Mendes', 'Justin Bieber', 'Bruno Mars'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Nightingale'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Kristin Hannah',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series is based on the true crime story of the Unabomber?',
+		difficulty: 'Medium',
+		correctAnswer: 'Manhunt: Unabomber',
+		incorrectAnswers: ['Mindhunter', 'Making a Murderer', 'The People v. O.J. Simpson'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2013 film 'Gravity'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Alfonso Cuarón',
+		incorrectAnswers: ['Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the song 'Watermelon Sugar' in 2019?",
+		difficulty: 'Easy',
+		correctAnswer: 'Harry Styles',
+		incorrectAnswers: ['Shawn Mendes', 'Justin Bieber', 'Bruno Mars'],
+		category: 'Music'
+	},
+	{
+		question: "Who wrote the novel 'The Light We Lost'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Jill Santopolo',
+		incorrectAnswers: ['Gillian Flynn', 'Stephen King', 'John Grisham'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which TV series features the character Claire Underwood?',
+		difficulty: 'Medium',
+		correctAnswer: 'House of Cards',
+		incorrectAnswers: ['Breaking Bad', 'Better Call Saul', 'True Detective'],
+		category: 'Television'
+	},
+	{
+		question: "Who directed the 2012 film 'Life of Pi'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Ang Lee',
+		incorrectAnswers: ['Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+		category: 'Movies'
+	},
+	{
+		question: "Which artist released the album 'FutureSex/LoveSounds' in 2006?",
+		difficulty: 'Easy',
+		correctAnswer: 'Justin Timberlake',
+		incorrectAnswers: ['Usher', 'Bruno Mars', 'Chris Brown'],
+		category: 'Music'
+	},
+  {
+    question: 'What year was the game "The Legend of Zelda: Breath of the Wild" released?',
+    difficulty: 'Easy',
+    correctAnswer: '2017',
+    incorrectAnswers: ['2015', '2016', '2018'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game won the Game of the Year award at The Game Awards 2020?',
+    difficulty: 'Medium',
+    correctAnswer: 'The Last of Us Part II',
+    incorrectAnswers: ['Ghost of Tsushima', 'Hades', 'Doom Eternal'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "Cyberpunk 2077"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Night City',
+    incorrectAnswers: ['Rapture', 'Midgar', 'Los Santos'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional island of Tsushima?',
+    difficulty: 'Medium',
+    correctAnswer: 'Ghost of Tsushima',
+    incorrectAnswers: ['Sekiro: Shadows Die Twice', 'Nioh', 'Dark Souls'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Red Dead Redemption 2" released?',
+    difficulty: 'Easy',
+    correctAnswer: '2018',
+    incorrectAnswers: ['2016', '2017', '2019'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for the phrase "Would you kindly"?',
+    difficulty: 'Medium',
+    correctAnswer: 'BioShock',
+    incorrectAnswers: ['Half-Life', 'Portal', 'Deus Ex'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main objective in the game "Among Us"?',
+    difficulty: 'Easy',
+    correctAnswer: 'Identify the impostors',
+    incorrectAnswers: ['Collect resources', 'Build structures', 'Defeat the dragon'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is set in the Norse mythology world of Midgard?',
+    difficulty: 'Medium',
+    correctAnswer: 'God of War (2018)',
+    incorrectAnswers: ['The Witcher 3', 'Dark Souls', 'Elder Scrolls V: Skyrim'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Fortnite" released?',
+    difficulty: 'Easy',
+    correctAnswer: '2017',
+    incorrectAnswers: ['2016', '2018', '2019'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional city of Los Santos?',
+    difficulty: 'Easy',
+    correctAnswer: 'Grand Theft Auto V',
+    incorrectAnswers: ['Watch Dogs', 'Saints Row', 'Sleeping Dogs'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main theme of the game "Hades"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Greek mythology',
+    incorrectAnswers: ['Norse mythology', 'Egyptian mythology', 'Roman mythology'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Battle Royale" mode?',
+    difficulty: 'Easy',
+    correctAnswer: 'Fortnite',
+    incorrectAnswers: ['Overwatch', 'Apex Legends', 'Valorant'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "The Witcher 3: Wild Hunt" released?',
+    difficulty: 'Medium',
+    correctAnswer: '2015',
+    incorrectAnswers: ['2014', '2016', '2017'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is set in the post-apocalyptic world of Boston?',
+    difficulty: 'Medium',
+    correctAnswer: 'Fallout 4',
+    incorrectAnswers: ['The Last of Us', 'Metro Exodus', 'Days Gone'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Minecraft" officially released?',
+    difficulty: 'Easy',
+    correctAnswer: '2011',
+    incorrectAnswers: ['2009', '2010', '2012'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional land of Tamriel?',
+    difficulty: 'Medium',
+    correctAnswer: 'The Elder Scrolls V: Skyrim',
+    incorrectAnswers: ['Dragon Age: Inquisition', 'The Witcher 3', 'Dark Souls'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main objective in the game "Stardew Valley"?',
+    difficulty: 'Easy',
+    correctAnswer: 'Manage a farm',
+    incorrectAnswers: ['Explore dungeons', 'Fight monsters', 'Build a city'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Nemesis System"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Middle-earth: Shadow of Mordor',
+    incorrectAnswers: ['Assassin’s Creed', 'Dark Souls', 'The Witcher 3'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Overwatch" released?',
+    difficulty: 'Easy',
+    correctAnswer: '2016',
+    incorrectAnswers: ['2015', '2017', '2018'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is set in the fictional city of Rapture?',
+    difficulty: 'Medium',
+    correctAnswer: 'BioShock',
+    incorrectAnswers: ['Dishonored', 'Prey', 'Deus Ex'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "Horizon Zero Dawn"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Post-apocalyptic Earth',
+    incorrectAnswers: ['Alien planet', 'Fantasy world', 'Virtual reality'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional region of Sinnoh?',
+    difficulty: 'Medium',
+    correctAnswer: 'Pokémon Diamond and Pearl',
+    incorrectAnswers: ['Pokémon Red and Blue', 'Pokémon Gold and Silver', 'Pokémon Black and White'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Animal Crossing: New Horizons" released?',
+    difficulty: 'Easy',
+    correctAnswer: '2020',
+    incorrectAnswers: ['2019', '2021', '2018'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Vault-Tec" theme?',
+    difficulty: 'Medium',
+    correctAnswer: 'Fallout',
+    incorrectAnswers: ['Borderlands', 'Bioshock', 'Metro'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "The Last of Us Part II"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Post-apocalyptic United States',
+    incorrectAnswers: ['Fantasy world', 'Alien planet', 'Virtual reality'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional island of Yara?',
+    difficulty: 'Medium',
+    correctAnswer: 'Far Cry 6',
+    incorrectAnswers: ['Just Cause 4', 'Ghost Recon Wildlands', 'Assassin’s Creed Odyssey'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Sekiro: Shadows Die Twice" released?',
+    difficulty: 'Medium',
+    correctAnswer: '2019',
+    incorrectAnswers: ['2018', '2020', '2021'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Wasteland" setting?',
+    difficulty: 'Medium',
+    correctAnswer: 'Fallout',
+    incorrectAnswers: ['Borderlands', 'Mad Max', 'Metro'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "Bloodborne"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Gothic city of Yharnam',
+    incorrectAnswers: ['Fantasy world', 'Post-apocalyptic Earth', 'Alien planet'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional city of Columbia?',
+    difficulty: 'Medium',
+    correctAnswer: 'BioShock Infinite',
+    incorrectAnswers: ['Dishonored', 'Prey', 'Deus Ex'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Dark Souls III" released?',
+    difficulty: 'Medium',
+    correctAnswer: '2016',
+    incorrectAnswers: ['2015', '2017', '2018'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Wild West" setting?',
+    difficulty: 'Easy',
+    correctAnswer: 'Red Dead Redemption',
+    incorrectAnswers: ['Fallout', 'Far Cry', 'Assassin’s Creed'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "Persona 5"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Modern-day Tokyo',
+    incorrectAnswers: ['Fantasy world', 'Post-apocalyptic Earth', 'Virtual reality'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional region of Hyrule?',
+    difficulty: 'Easy',
+    correctAnswer: 'The Legend of Zelda',
+    incorrectAnswers: ['Final Fantasy', 'Dragon Quest', 'Elder Scrolls'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Monster Hunter: World" released?',
+    difficulty: 'Medium',
+    correctAnswer: '2018',
+    incorrectAnswers: ['2017', '2019', '2020'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Vault Boy" mascot?',
+    difficulty: 'Easy',
+    correctAnswer: 'Fallout',
+    incorrectAnswers: ['Borderlands', 'Bioshock', 'Metro'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "Control"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Federal Bureau of Control',
+    incorrectAnswers: ['Fantasy world', 'Post-apocalyptic Earth', 'Alien planet'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional city of Midgar?',
+    difficulty: 'Medium',
+    correctAnswer: 'Final Fantasy VII',
+    incorrectAnswers: ['Kingdom Hearts', 'Dragon Quest', 'Persona'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Death Stranding" released?',
+    difficulty: 'Medium',
+    correctAnswer: '2019',
+    incorrectAnswers: ['2018', '2020', '2021'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Spartan" theme?',
+    difficulty: 'Easy',
+    correctAnswer: 'Halo',
+    incorrectAnswers: ['Gears of War', 'Call of Duty', 'Destiny'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "Dishonored"?',
+    difficulty: 'Medium',
+    correctAnswer: 'City of Dunwall',
+    incorrectAnswers: ['Fantasy world', 'Post-apocalyptic Earth', 'Alien planet'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional region of Kanto?',
+    difficulty: 'Medium',
+    correctAnswer: 'Pokémon Red and Blue',
+    incorrectAnswers: ['Pokémon Gold and Silver', 'Pokémon Ruby and Sapphire', 'Pokémon Diamond and Pearl'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "The Outer Worlds" released?',
+    difficulty: 'Medium',
+    correctAnswer: '2019',
+    incorrectAnswers: ['2018', '2020', '2021'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Vault-Tec" theme?',
+    difficulty: 'Medium',
+    correctAnswer: 'Fallout',
+    incorrectAnswers: ['Borderlands', 'Bioshock', 'Metro'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the main setting of the game "The Last of Us Part II"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Post-apocalyptic United States',
+    incorrectAnswers: ['Fantasy world', 'Alien planet', 'Virtual reality'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the fictional island of Yara?',
+    difficulty: 'Medium',
+    correctAnswer: 'Far Cry 6',
+    incorrectAnswers: ['Just Cause 4', 'Ghost Recon Wildlands', 'Assassin’s Creed Odyssey'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the game "Sekiro: Shadows Die Twice" released?',
+    difficulty: 'Medium',
+    correctAnswer: '2019',
+    incorrectAnswers: ['2018', '2020', '2021'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for its "Wasteland" setting?',
+    difficulty: 'Medium',
+    correctAnswer: 'Fallout',
+    incorrectAnswers: ['Borderlands', 'Mad Max', 'Metro'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in The Legend of Zelda series?',
+    difficulty: 'Easy',
+    correctAnswer: 'Link',
+    incorrectAnswers: ['Zelda', 'Ganon', 'Epona'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Master Chief?',
+    difficulty: 'Easy',
+    correctAnswer: 'Halo',
+    incorrectAnswers: ['Gears of War', 'Call of Duty', 'Destiny'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the highest-selling video game of all time?',
+    difficulty: 'Medium',
+    correctAnswer: 'Minecraft',
+    incorrectAnswers: ['Tetris', 'Grand Theft Auto V', 'Wii Sports'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Lara Croft?',
+    difficulty: 'Easy',
+    correctAnswer: 'Tomb Raider',
+    incorrectAnswers: ['Uncharted', 'Assassin’s Creed', 'Far Cry'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original Pac-Man arcade game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1980',
+    incorrectAnswers: ['1978', '1982', '1984'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is known for the phrase "The cake is a lie"?',
+    difficulty: 'Medium',
+    correctAnswer: 'Portal',
+    incorrectAnswers: ['Half-Life', 'BioShock', 'Mass Effect'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main protagonist in the God of War series?',
+    difficulty: 'Easy',
+    correctAnswer: 'Kratos',
+    incorrectAnswers: ['Zeus', 'Ares', 'Hades'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features a battle royale mode called Warzone?',
+    difficulty: 'Easy',
+    correctAnswer: 'Call of Duty',
+    incorrectAnswers: ['Fortnite', 'Apex Legends', 'PUBG'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the city where the game BioShock is set?',
+    difficulty: 'Medium',
+    correctAnswer: 'Rapture',
+    incorrectAnswers: ['Columbia', 'New York', 'Atlantis'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Solid Snake?',
+    difficulty: 'Easy',
+    correctAnswer: 'Metal Gear Solid',
+    incorrectAnswers: ['Splinter Cell', 'Hitman', 'Deus Ex'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the first Super Mario Bros. game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1985',
+    incorrectAnswers: ['1983', '1987', '1990'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Geralt of Rivia?',
+    difficulty: 'Easy',
+    correctAnswer: 'The Witcher',
+    incorrectAnswers: ['Dragon Age', 'Skyrim', 'Dark Souls'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Half-Life series?',
+    difficulty: 'Medium',
+    correctAnswer: 'Gordon Freeman',
+    incorrectAnswers: ['Alyx Vance', 'Isaac Clarke', 'Jack Cooper'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game is set in the fictional land of Hyrule?',
+    difficulty: 'Easy',
+    correctAnswer: 'The Legend of Zelda',
+    incorrectAnswers: ['Final Fantasy', 'Elder Scrolls', 'Dragon Quest'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Ezio Auditore?',
+    difficulty: 'Medium',
+    correctAnswer: 'Assassin’s Creed',
+    incorrectAnswers: ['Prince of Persia', 'The Witcher', 'Dark Souls'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Red Dead Redemption series?',
+    difficulty: 'Medium',
+    correctAnswer: 'John Marston',
+    incorrectAnswers: ['Arthur Morgan', 'Dutch van der Linde', 'Bill Williamson'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features a post-apocalyptic world with robotic dinosaurs?',
+    difficulty: 'Medium',
+    correctAnswer: 'Horizon Zero Dawn',
+    incorrectAnswers: ['Fallout', 'The Last of Us', 'Metro Exodus'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Uncharted series?',
+    difficulty: 'Easy',
+    correctAnswer: 'Nathan Drake',
+    incorrectAnswers: ['Lara Croft', 'Joel Miller', 'Marcus Fenix'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Samus Aran?',
+    difficulty: 'Medium',
+    correctAnswer: 'Metroid',
+    incorrectAnswers: ['Mega Man', 'Castlevania', 'Contra'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original Doom game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1993',
+    incorrectAnswers: ['1991', '1995', '1997'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Arthur Morgan?',
+    difficulty: 'Easy',
+    correctAnswer: 'Red Dead Redemption 2',
+    incorrectAnswers: ['Grand Theft Auto V', 'The Witcher 3', 'Far Cry 5'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Mass Effect series?',
+    difficulty: 'Medium',
+    correctAnswer: 'Commander Shepard',
+    incorrectAnswers: ['Garrus Vakarian', 'Tali’Zorah', 'Liara T’Soni'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Cloud Strife?',
+    difficulty: 'Medium',
+    correctAnswer: 'Final Fantasy',
+    incorrectAnswers: ['Kingdom Hearts', 'Dragon Quest', 'Persona'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Resident Evil series?',
+    difficulty: 'Medium',
+    correctAnswer: 'Leon S. Kennedy',
+    incorrectAnswers: ['Chris Redfield', 'Jill Valentine', 'Claire Redfield'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features a city called Night City?',
+    difficulty: 'Medium',
+    correctAnswer: 'Cyberpunk 2077',
+    incorrectAnswers: ['Deus Ex', 'Watch Dogs', 'Mirror’s Edge'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Assassin’s Creed series?',
+    difficulty: 'Medium',
+    correctAnswer: 'Desmond Miles',
+    incorrectAnswers: ['Ezio Auditore', 'Altaïr Ibn-La\'Ahad', 'Connor Kenway'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Marcus Fenix?',
+    difficulty: 'Easy',
+    correctAnswer: 'Gears of War',
+    incorrectAnswers: ['Halo', 'Call of Duty', 'Battlefield'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original Final Fantasy game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1987',
+    incorrectAnswers: ['1985', '1989', '1991'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Ellie?',
+    difficulty: 'Easy',
+    correctAnswer: 'The Last of Us',
+    incorrectAnswers: ['Uncharted', 'Tomb Raider', 'Resident Evil'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Fallout series?',
+    difficulty: 'Medium',
+    correctAnswer: 'The Vault Dweller',
+    incorrectAnswers: ['The Courier', 'The Lone Wanderer', 'The Sole Survivor'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Mega Man?',
+    difficulty: 'Easy',
+    correctAnswer: 'Mega Man',
+    incorrectAnswers: ['Metroid', 'Castlevania', 'Contra'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original Street Fighter game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1987',
+    incorrectAnswers: ['1985', '1989', '1991'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Aloy?',
+    difficulty: 'Easy',
+    correctAnswer: 'Horizon Zero Dawn',
+    incorrectAnswers: ['The Witcher 3', 'Assassin’s Creed', 'Far Cry'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Dark Souls series?',
+    difficulty: 'Medium',
+    correctAnswer: 'The Chosen Undead',
+    incorrectAnswers: ['The Ashen One', 'The Bearer of the Curse', 'The Hunter'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Dante?',
+    difficulty: 'Medium',
+    correctAnswer: 'Devil May Cry',
+    incorrectAnswers: ['Bayonetta', 'God of War', 'Ninja Gaiden'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original Grand Theft Auto game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1997',
+    incorrectAnswers: ['1995', '1999', '2001'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Sora?',
+    difficulty: 'Easy',
+    correctAnswer: 'Kingdom Hearts',
+    incorrectAnswers: ['Final Fantasy', 'Dragon Quest', 'Persona'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the BioShock series?',
+    difficulty: 'Medium',
+    correctAnswer: 'Jack',
+    incorrectAnswers: ['Booker DeWitt', 'Andrew Ryan', 'Atlas'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Sam Fisher?',
+    difficulty: 'Medium',
+    correctAnswer: 'Splinter Cell',
+    incorrectAnswers: ['Hitman', 'Metal Gear Solid', 'Deus Ex'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original Sonic the Hedgehog game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1991',
+    incorrectAnswers: ['1989', '1993', '1995'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Isaac Clarke?',
+    difficulty: 'Medium',
+    correctAnswer: 'Dead Space',
+    incorrectAnswers: ['Mass Effect', 'BioShock', 'The Outer Worlds'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Dragon Age series?',
+    difficulty: 'Medium',
+    correctAnswer: 'The Warden',
+    incorrectAnswers: ['The Inquisitor', 'The Champion', 'The Hero of Ferelden'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Ryu?',
+    difficulty: 'Easy',
+    correctAnswer: 'Street Fighter',
+    incorrectAnswers: ['Tekken', 'Mortal Kombat', 'King of Fighters'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original Mortal Kombat game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1992',
+    incorrectAnswers: ['1990', '1994', '1996'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Bayonetta?',
+    difficulty: 'Easy',
+    correctAnswer: 'Bayonetta',
+    incorrectAnswers: ['Devil May Cry', 'Ninja Gaiden', 'God of War'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What is the name of the main character in the Far Cry series?',
+    difficulty: 'Medium',
+    correctAnswer: 'Jason Brody',
+    incorrectAnswers: ['Ajay Ghale', 'Dani Rojas', 'Vaas Montenegro'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game series features the character Jill Valentine?',
+    difficulty: 'Medium',
+    correctAnswer: 'Resident Evil',
+    incorrectAnswers: ['Silent Hill', 'Dead Space', 'The Evil Within'],
+    category: 'Video Games'
+  },
+  {
+    question: 'What year was the original The Legend of Zelda game released?',
+    difficulty: 'Medium',
+    correctAnswer: '1986',
+    incorrectAnswers: ['1984', '1988', '1990'],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which game features the character Booker DeWitt?',
+    difficulty: 'Medium',
+    correctAnswer: 'BioShock Infinite',
+    incorrectAnswers: ['BioShock', 'Dishonored', 'Prey'],
+    category: 'Video Games'
+  }
 ];
