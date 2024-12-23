@@ -16,7 +16,7 @@
     <span class="text-7xl">
       🎄
     </span>
-    <h1 class="text-2xl font-bold">Xmas Quiz</h1>
+    <span class="text-2xl font-bold">Xmas Quiz</span>
     <img src="/lights.gif" alt="Christmas lights" class="w-1/3 -my-[3.6rem]" />
   </header>
   <main class="flex-1 p-4">

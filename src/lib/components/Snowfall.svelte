@@ -2,7 +2,7 @@
   import { onMount } from 'svelte'
 
   // a bunch of variables defining the snow and how it falls
-  const SNOWFLAKES_COUNT = 100 // on firefox should go smoothly up to 750
+  const SNOWFLAKES_COUNT = 75 // on firefox should go smoothly up to 750
   const SNOWFLAKE_MIN_SCALE = 0.1
   const MELTING_SPEED = 1.12
   const WIND_FORCE = 0.01
@@ -69,6 +69,16 @@
   })
 </script>
 
+<div class="snowframe" aria-hidden="true">
+  {#each snowflakes as flake}
+    <div
+      class="snowflake"
+      style={`opacity: ${flake.opacity}; transform: scale(${flake.scale}) rotate(${flake.rotation}deg); left: ${flake.x}%; top: calc(${flake.y}% - ${flake.scale}rem)`}>
+      {flake.snowIcon}
+    </div>
+  {/each}
+</div>
+
 <style>
   :global(body) {
     min-height: 100%;
@@ -99,13 +109,3 @@
     overflow: hidden;
   }
 </style>
-
-<div class="snowframe" aria-hidden="true">
-  {#each snowflakes as flake}
-    <div
-      class="snowflake"
-      style={`opacity: ${flake.opacity}; transform: scale(${flake.scale}) rotate(${flake.rotation}deg); left: ${flake.x}%; top: calc(${flake.y}% - ${flake.scale}rem)`}>
-      {flake.snowIcon}
-    </div>
-  {/each}
-</div>
