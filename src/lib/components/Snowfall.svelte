@@ -2,7 +2,7 @@
   import { onMount } from 'svelte'
 
   // a bunch of variables defining the snow and how it falls
-  const SNOWFLAKES_COUNT = 200 // on firefox should go smoothly up to 750
+  const SNOWFLAKES_COUNT = 100 // on firefox should go smoothly up to 750
   const SNOWFLAKE_MIN_SCALE = 0.1
   const MELTING_SPEED = 1.12
   const WIND_FORCE = 0.01
