@@ -9,7 +9,7 @@
 	<div class="space-y-6 text-center" in:fly={{ y: 20, duration: 500, delay: 200 }}>
 		<h1 class="mb-4 text-4xl font-bold">Welcome to the Xmas Quiz!</h1>
 
-		<p class="mx-auto max-w-xl text-lg leading-relaxed text-gray-600">
+		<p class="mx-auto max-w-xl text-lg leading-relaxed">
 			To save the time we spend every year searching through all the different sites and packs of
 			cards, I have created a quiz app that has a great selection of questions for everyone to
 			enjoy!
