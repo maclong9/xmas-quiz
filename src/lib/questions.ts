@@ -8,6 +8,48 @@ export interface Question {
 
 export const questions: Question[] = [
 	{
+		question: 'How long was our first video call?',
+		difficulty: 'Easy',
+		correctAnswer: '88 minutes',
+		incorrectAnswers: ['30 minutes', '45 minutes', '2 hours'],
+		category: 'Personal'
+	},
+	{
+		question: 'What date did we first exchange messages?',
+		difficulty: 'Easy',
+		correctAnswer: 'November 28th',
+		incorrectAnswers: ['July 15th', 'May 15th', 'November 25th'],
+		category: 'Personal'
+	},
+	{
+		question: 'Where did we first meet?',
+		difficulty: 'Easy',
+		correctAnswer: 'Threads',
+		incorrectAnswers: ['Instagram', 'YouTube', 'The Beach'],
+		category: 'Personal'
+	},
+	{
+		question: 'Which messaging app did you convince me to download?',
+		difficulty: 'Easy',
+		correctAnswer: 'Telegram',
+		incorrectAnswers: ['WhatsApp', 'Signal', 'Slack'],
+		category: 'Personal'
+	},
+	{
+		question: 'What was our first topic of conversation?',
+		difficulty: 'Medium',
+		correctAnswer: 'Linkin Park',
+		incorrectAnswers: ['Belarus', 'Sabrina Carpenter', 'Witchcraft'],
+		category: 'Personal'
+	},
+	{
+		question: 'In which city will we meet in person for the first time?',
+		difficulty: 'Medium',
+		correctAnswer: 'Poznan',
+		incorrectAnswers: ['Warsaw', 'Krakow', 'London'],
+		category: 'Personal'
+	},
+	{
 		question: 'What is the capital city of Belarus?',
 		difficulty: 'Easy',
 		correctAnswer: 'Minsk',
@@ -21,132 +63,132 @@ export const questions: Question[] = [
 		incorrectAnswers: ['Poland', 'Lithuania', 'Ukraine'],
 		category: 'Geography'
 	},
-  {
-    question: 'What is the traditional Belarusian dress for women called?',
-    difficulty: 'Medium',
-    correctAnswer: 'Vyshyvanka',
-    incorrectAnswers: ['Kimono', 'Sari', 'Hanbok'],
-    category: 'Culture'
-  },
-  {
-    question: 'What is a common feature of traditional Belarusian dress?',
-    difficulty: 'Medium',
-    correctAnswer: 'Embroidery',
-    incorrectAnswers: ['Sequins', 'Beads', 'Lace'],
-    category: 'Culture'
-  },
-  {
-    question: 'What is the traditional Belarusian headwear for women?',
-    difficulty: 'Medium',
-    correctAnswer: 'Kupalinka',
-    incorrectAnswers: ['Beret', 'Turban', 'Veil'],
-    category: 'Culture'
-  }
-  {
-    question: 'Which Belarusian artist is known for his surrealist paintings?',
-    difficulty: 'Medium',
-    correctAnswer: 'Marc Chagall',
-    incorrectAnswers: ['Kazimir Malevich', 'Wassily Kandinsky', 'Piet Mondrian'],
-    category: 'Art'
-  },
-  {
-    question: 'What is the name of the famous Belarusian ballet dancer?',
-    difficulty: 'Medium',
-    correctAnswer: 'Maya Plisetskaya',
-    incorrectAnswers: ['Anna Pavlova', 'Galina Ulanova', 'Tamara Karsavina'],
-    category: 'Art'
-  },
-  {
-    question: 'Which Belarusian artist is known for his works in the Art Nouveau style?',
-    difficulty: 'Hard',
-    correctAnswer: 'Yehuda Pen',
-    incorrectAnswers: ['Ivan Aivazovsky', 'Ilya Repin', 'Mikhail Vrubel'],
-    category: 'Art'
-  },
-  {
-    question: 'Which Belarusian painter is famous for his landscapes?',
-    difficulty: 'Medium',
-    correctAnswer: 'Ivan Khrutsky',
-    incorrectAnswers: ['Isaac Levitan', 'Arkhip Kuindzhi', 'Alexei Savrasov'],
-    category: 'Art'
-  },
-  {
-    question: 'Which Belarusian artist is known for his graphic art and illustrations?',
-    difficulty: 'Medium',
-    correctAnswer: 'Mikhail Savitsky',
-    incorrectAnswers: ['Viktor Vasnetsov', 'Ivan Bilibin', 'Mikhail Vrubel'],
-    category: 'Art'
-  },
-  {
-    question: 'Who is considered the father of Belarusian classical music?',
-    difficulty: 'Medium',
-    correctAnswer: 'Stanislaw Moniuszko',
-    incorrectAnswers: ['Mikhail Glinka', 'Alexander Borodin', 'Nikolai Rimsky-Korsakov'],
-    category: 'Music'
-  },
-  {
-    question: 'Which Belarusian composer wrote the opera "The Forest Song"?',
-    difficulty: 'Hard',
-    correctAnswer: 'Yevstigney Fomin',
-    incorrectAnswers: ['Modest Mussorgsky', 'Pyotr Tchaikovsky', 'Sergei Rachmaninoff'],
-    category: 'Music'
-  },
-  {
-    question: 'Which Belarusian musician is known for his contributions to jazz?',
-    difficulty: 'Medium',
-    correctAnswer: 'Leonid Chizhik',
-    incorrectAnswers: ['Igor Butman', 'David Goloschekin', 'Oleg Lundstrem'],
-    category: 'Music'
-  },
-  {
-    question: 'Which Belarusian singer won the Eurovision Song Contest in 2009?',
-    difficulty: 'Medium',
-    correctAnswer: 'Alexander Rybak',
-    incorrectAnswers: ['Dima Bilan', 'Ruslana', 'Loreen'],
-    category: 'Music'
-  },
-  {
-    question: 'Which Belarusian conductor is known for his work with the Bolshoi Theatre?',
-    difficulty: 'Hard',
-    correctAnswer: 'Mark Ermler',
-    incorrectAnswers: ['Valery Gergiev', 'Yuri Temirkanov', 'Vladimir Spivakov'],
-    category: 'Music'
-  },
-  {
-    question: 'Who is considered the national poet of Belarus?',
-    difficulty: 'Medium',
-    correctAnswer: 'Yanka Kupala',
-    incorrectAnswers: ['Adam Mickiewicz', 'Taras Shevchenko', 'Alexander Pushkin'],
-    category: 'Literature'
-  },
-  {
-    question: 'Which Belarusian author wrote "The Land Beneath White Wings"?',
-    difficulty: 'Hard',
-    correctAnswer: 'Vladimir Korotkevich',
-    incorrectAnswers: ['Ivan Melezh', 'Vasil Bykaŭ', 'Yanka Kupala'],
-    category: 'Literature'
-  },
-  {
-    question: 'Which Belarusian writer won the Nobel Prize in Literature in 2015?',
-    difficulty: 'Medium',
-    correctAnswer: 'Svetlana Alexievich',
-    incorrectAnswers: ['Orhan Pamuk', 'Alice Munro', 'Kazuo Ishiguro'],
-    category: 'Literature'
-  },
-  {
-    question: 'Which Belarusian author wrote "The Last Pastoral"?',
-    difficulty: 'Hard',
-    correctAnswer: 'Ivan Melezh',
-    incorrectAnswers: ['Yanka Kupala', 'Vasil Bykaŭ', 'Vladimir Korotkevich'],
-    category: 'Literature'
-  },
-  {
-    question: 'Which Belarusian poet is known for his poem "The New Land"?',
-    difficulty: 'Medium',
-    correctAnswer: 'Yakub Kolas',
-    incorrectAnswers: ['Yanka Kupala', 'Vasil Bykaŭ', 'Maxim Bogdanovich'],
-    category: 'Literature'
-  }
+	{
+		question: 'What is the traditional Belarusian dress for women called?',
+		difficulty: 'Medium',
+		correctAnswer: 'Vyshyvanka',
+		incorrectAnswers: ['Kimono', 'Sari', 'Hanbok'],
+		category: 'Culture'
+	},
+	{
+		question: 'What is a common feature of traditional Belarusian dress?',
+		difficulty: 'Medium',
+		correctAnswer: 'Embroidery',
+		incorrectAnswers: ['Sequins', 'Beads', 'Lace'],
+		category: 'Culture'
+	},
+	{
+		question: 'What is the traditional Belarusian headwear for women?',
+		difficulty: 'Medium',
+		correctAnswer: 'Kupalinka',
+		incorrectAnswers: ['Beret', 'Turban', 'Veil'],
+		category: 'Culture'
+	},
+	{
+		question: 'Which Belarusian artist is known for his surrealist paintings?',
+		difficulty: 'Medium',
+		correctAnswer: 'Marc Chagall',
+		incorrectAnswers: ['Kazimir Malevich', 'Wassily Kandinsky', 'Piet Mondrian'],
+		category: 'Art'
+	},
+	{
+		question: 'What is the name of the famous Belarusian ballet dancer?',
+		difficulty: 'Medium',
+		correctAnswer: 'Maya Plisetskaya',
+		incorrectAnswers: ['Anna Pavlova', 'Galina Ulanova', 'Tamara Karsavina'],
+		category: 'Art'
+	},
+	{
+		question: 'Which Belarusian artist is known for his works in the Art Nouveau style?',
+		difficulty: 'Hard',
+		correctAnswer: 'Yehuda Pen',
+		incorrectAnswers: ['Ivan Aivazovsky', 'Ilya Repin', 'Mikhail Vrubel'],
+		category: 'Art'
+	},
+	{
+		question: 'Which Belarusian painter is famous for his landscapes?',
+		difficulty: 'Medium',
+		correctAnswer: 'Ivan Khrutsky',
+		incorrectAnswers: ['Isaac Levitan', 'Arkhip Kuindzhi', 'Alexei Savrasov'],
+		category: 'Art'
+	},
+	{
+		question: 'Which Belarusian artist is known for his graphic art and illustrations?',
+		difficulty: 'Medium',
+		correctAnswer: 'Mikhail Savitsky',
+		incorrectAnswers: ['Viktor Vasnetsov', 'Ivan Bilibin', 'Mikhail Vrubel'],
+		category: 'Art'
+	},
+	{
+		question: 'Who is considered the father of Belarusian classical music?',
+		difficulty: 'Medium',
+		correctAnswer: 'Stanislaw Moniuszko',
+		incorrectAnswers: ['Mikhail Glinka', 'Alexander Borodin', 'Nikolai Rimsky-Korsakov'],
+		category: 'Music'
+	},
+	{
+		question: 'Which Belarusian composer wrote the opera "The Forest Song"?',
+		difficulty: 'Hard',
+		correctAnswer: 'Yevstigney Fomin',
+		incorrectAnswers: ['Modest Mussorgsky', 'Pyotr Tchaikovsky', 'Sergei Rachmaninoff'],
+		category: 'Music'
+	},
+	{
+		question: 'Which Belarusian musician is known for his contributions to jazz?',
+		difficulty: 'Medium',
+		correctAnswer: 'Leonid Chizhik',
+		incorrectAnswers: ['Igor Butman', 'David Goloschekin', 'Oleg Lundstrem'],
+		category: 'Music'
+	},
+	{
+		question: 'Which Belarusian singer won the Eurovision Song Contest in 2009?',
+		difficulty: 'Medium',
+		correctAnswer: 'Alexander Rybak',
+		incorrectAnswers: ['Dima Bilan', 'Ruslana', 'Loreen'],
+		category: 'Music'
+	},
+	{
+		question: 'Which Belarusian conductor is known for his work with the Bolshoi Theatre?',
+		difficulty: 'Hard',
+		correctAnswer: 'Mark Ermler',
+		incorrectAnswers: ['Valery Gergiev', 'Yuri Temirkanov', 'Vladimir Spivakov'],
+		category: 'Music'
+	},
+	{
+		question: 'Who is considered the national poet of Belarus?',
+		difficulty: 'Medium',
+		correctAnswer: 'Yanka Kupala',
+		incorrectAnswers: ['Adam Mickiewicz', 'Taras Shevchenko', 'Alexander Pushkin'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which Belarusian author wrote "The Land Beneath White Wings"?',
+		difficulty: 'Hard',
+		correctAnswer: 'Vladimir Korotkevich',
+		incorrectAnswers: ['Ivan Melezh', 'Vasil Bykaŭ', 'Yanka Kupala'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which Belarusian writer won the Nobel Prize in Literature in 2015?',
+		difficulty: 'Medium',
+		correctAnswer: 'Svetlana Alexievich',
+		incorrectAnswers: ['Orhan Pamuk', 'Alice Munro', 'Kazuo Ishiguro'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which Belarusian author wrote "The Last Pastoral"?',
+		difficulty: 'Hard',
+		correctAnswer: 'Ivan Melezh',
+		incorrectAnswers: ['Yanka Kupala', 'Vasil Bykaŭ', 'Vladimir Korotkevich'],
+		category: 'Literature'
+	},
+	{
+		question: 'Which Belarusian poet is known for his poem "The New Land"?',
+		difficulty: 'Medium',
+		correctAnswer: 'Yakub Kolas',
+		incorrectAnswers: ['Yanka Kupala', 'Vasil Bykaŭ', 'Maxim Bogdanovich'],
+		category: 'Literature'
+	},
 	{
 		question: 'What are the official languages of Belarus?',
 		difficulty: 'Medium',
