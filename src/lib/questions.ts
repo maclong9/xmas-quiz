@@ -211,58 +211,6 @@ export const questions: Question[] = [
 		category: 'Sabrina Carpenter'
 	},
 	{
-		question: 'In which TV show did Sabrina Carpenter play the role of Maya Hart?',
-		difficulty: 'Easy',
-		correctAnswer: 'Girl Meets World',
-		incorrectAnswers: ['The Goodwin Games', 'Orange Is the New Black', 'The Fosters'],
-		category: 'Sabrina Carpenter'
-	},
-	{
-		question: "What is the name of Sabrina Carpenter's character in the movie 'Tall Girl'?",
-		difficulty: 'Medium',
-		correctAnswer: 'Harper Kreyman',
-		incorrectAnswers: ['Jodi Kreyman', 'Kimmy Stitcher', 'Liz'],
-		category: 'Sabrina Carpenter'
-	},
-	{
-		question:
-			"Which song by Sabrina Carpenter features the lyrics 'Can't blame a girl for trying'?",
-		difficulty: 'Easy',
-		correctAnswer: "Can't Blame a Girl for Trying",
-		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
-		category: 'Sabrina Carpenter'
-	},
-	{
-		question: "What is the name of the cat in the TV show 'Sabrina the Teenage Witch'?",
-		difficulty: 'Easy',
-		correctAnswer: 'Salem',
-		incorrectAnswers: ['Felix', 'Whiskers', 'Shadow'],
-		category: 'Witches'
-	},
-	{
-		question: "In which year was the first episode of 'Sabrina the Teenage Witch' aired?",
-		difficulty: 'Medium',
-		correctAnswer: '1996',
-		incorrectAnswers: ['1994', '1998', '2000'],
-		category: 'Witches'
-	},
-	{
-		question:
-			"What is the name of the school that Sabrina Spellman attends in 'Chilling Adventures of Sabrina'?",
-		difficulty: 'Medium',
-		correctAnswer: 'Academy of Unseen Arts',
-		incorrectAnswers: ['Hogwarts', 'Hex Hall', 'Salem Academy'],
-		category: 'Witches'
-	},
-	{
-		question:
-			"Which actress played the role of Sabrina Spellman in the 1996 TV show 'Sabrina the Teenage Witch'?",
-		difficulty: 'Easy',
-		correctAnswer: 'Melissa Joan Hart',
-		incorrectAnswers: ['Sarah Michelle Gellar', 'Alyssa Milano', 'Shannen Doherty'],
-		category: 'Witches'
-	},
-	{
 		question: "What is the name of Sabrina Carpenter's 2018 single that became a hit?",
 		difficulty: 'Medium',
 		correctAnswer: 'Almost Love',
@@ -277,67 +225,10 @@ export const questions: Question[] = [
 		category: 'Cats'
 	},
 	{
-		question:
-			"What is the name of Sabrina Carpenter's character in the Disney Channel Original Movie 'Adventures in Babysitting'?",
-		difficulty: 'Medium',
-		correctAnswer: 'Jenny Parker',
-		incorrectAnswers: ['Lola Perez', 'Emily Cooper', 'Maddy Smith'],
-		category: 'Sabrina Carpenter'
-	},
-	{
-		question: 'Which famous witch is known for her green skin and pointy hat?',
-		difficulty: 'Easy',
-		correctAnswer: 'Wicked Witch of the West',
-		incorrectAnswers: ['Glinda the Good Witch', 'Sabrina Spellman', 'Hermione Granger'],
-		category: 'Witches'
-	},
-	{
-		question: "What is the name of the black cat in the movie 'Hocus Pocus'?",
-		difficulty: 'Medium',
-		correctAnswer: 'Binx',
-		incorrectAnswers: ['Salem', 'Midnight', 'Shadow'],
-		category: 'Witches'
-	},
-	{
-		question: "Which song by Sabrina Carpenter features the lyrics 'We're burning with the stars'?",
-		difficulty: 'Medium',
-		correctAnswer: 'On Purpose',
-		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
-		category: 'Sabrina Carpenter'
-	},
-	{
-		question: "What is the name of the witch in the fairy tale 'Hansel and Gretel'?",
-		difficulty: 'Easy',
-		correctAnswer: 'The Wicked Witch',
-		incorrectAnswers: ['The Evil Queen', 'Maleficent', 'Ursula'],
-		category: 'Witches'
-	},
-	{
 		question: 'Which breed of cat is known for its distinctive folded ears?',
 		difficulty: 'Medium',
 		correctAnswer: 'Scottish Fold',
 		incorrectAnswers: ['Sphynx', 'Maine Coon', 'Siamese'],
-		category: 'Cats'
-	},
-	{
-		question: "What is the name of Sabrina Carpenter's character in the Netflix movie 'Work It'?",
-		difficulty: 'Medium',
-		correctAnswer: 'Quinn Ackerman',
-		incorrectAnswers: ['Jasmine Hale', 'Brittany Foster', 'Liza Koshy'],
-		category: 'Sabrina Carpenter'
-	},
-	{
-		question: 'Which famous witch is a character in the Harry Potter series?',
-		difficulty: 'Easy',
-		correctAnswer: 'Hermione Granger',
-		incorrectAnswers: ['Sabrina Spellman', 'Glinda the Good Witch', 'The Wicked Witch of the West'],
-		category: 'Witches'
-	},
-	{
-		question: "What is the name of the cat in the movie 'The Aristocats'?",
-		difficulty: 'Medium',
-		correctAnswer: 'Duchess',
-		incorrectAnswers: ['Marie', 'Toulouse', 'Berlioz'],
 		category: 'Cats'
 	},
 	{
@@ -348,13 +239,6 @@ export const questions: Question[] = [
 		category: 'Sabrina Carpenter'
 	},
 	{
-		question: "What is the name of the witch in the movie 'The Wizard of Oz'?",
-		difficulty: 'Easy',
-		correctAnswer: 'The Wicked Witch of the West',
-		incorrectAnswers: ['Glinda the Good Witch', 'Sabrina Spellman', 'Hermione Granger'],
-		category: 'Witches'
-	},
-	{
 		question: 'Which breed of cat is known for its short legs?',
 		difficulty: 'Medium',
 		correctAnswer: 'Munchkin',
@@ -362,25 +246,364 @@ export const questions: Question[] = [
 		category: 'Cats'
 	},
 	{
-		question:
-			"What is the name of Sabrina Carpenter's character in the Disney Channel Original Movie 'Cloud 9'?",
+		question: "What is the name of Sabrina Carpenter's second studio album?",
 		difficulty: 'Medium',
-		correctAnswer: 'Kayla Morgan',
-		incorrectAnswers: ['Emily Cooper', 'Jenny Parker', 'Lola Perez'],
+		correctAnswer: 'Evolution',
+		incorrectAnswers: ['Eyes Wide Open', 'Singular: Act I', 'Singular: Act II'],
 		category: 'Sabrina Carpenter'
 	},
 	{
-		question: "Which famous witch is a character in the TV show 'Bewitched'?",
+		question:
+			"Which song by Sabrina Carpenter features the lyrics 'Can't blame a girl for trying'?",
 		difficulty: 'Easy',
-		correctAnswer: 'Samantha Stephens',
-		incorrectAnswers: ['Sabrina Spellman', 'Glinda the Good Witch', 'Hermione Granger'],
-		category: 'Witches'
+		correctAnswer: "Can't Blame a Girl for Trying",
+		incorrectAnswers: ['Eyes Wide Open', 'On Purpose', 'Thumbs'],
+		category: 'Sabrina Carpenter'
 	},
 	{
-		question: "What is the name of the cat in the movie 'Coraline'?",
+		question: "What is the name of Sabrina Carpenter's 2019 single?",
 		difficulty: 'Medium',
-		correctAnswer: 'The Cat',
-		incorrectAnswers: ['Salem', 'Binx', 'Shadow'],
-		category: 'Cats'
+		correctAnswer: 'In My Bed',
+		incorrectAnswers: ['Sue Me', 'Almost Love', 'Thumbs'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "Which song by Sabrina Carpenter features the lyrics 'We're burning bright'?",
+		difficulty: 'Medium',
+		correctAnswer: 'On Purpose',
+		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's debut single?",
+		difficulty: 'Medium',
+		correctAnswer: "Can't Blame a Girl for Trying",
+		incorrectAnswers: ['Eyes Wide Open', 'On Purpose', 'Thumbs'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "Which song by Sabrina Carpenter features the lyrics 'We're just kids in love'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Why',
+		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's 2016 single?",
+		difficulty: 'Medium',
+		correctAnswer: 'Thumbs',
+		incorrectAnswers: ['Sue Me', 'Almost Love', 'Why'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question:
+			"Which song by Sabrina Carpenter features the lyrics 'You're my favorite kind of night'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Sue Me',
+		incorrectAnswers: ['Thumbs', 'Almost Love', 'Why'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's 2017 single?",
+		difficulty: 'Medium',
+		correctAnswer: 'Why',
+		incorrectAnswers: ['Sue Me', 'Almost Love', 'Thumbs'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "Which song by Sabrina Carpenter features the lyrics 'We're just kids in love'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Why',
+		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's 2018 single?",
+		difficulty: 'Medium',
+		correctAnswer: 'Almost Love',
+		incorrectAnswers: ['Sue Me', 'Thumbs', 'Why'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "Which song by Sabrina Carpenter features the lyrics 'All we have is love'?",
+		difficulty: 'Medium',
+		correctAnswer: 'All We Have Is Love',
+		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's 2019 single?",
+		difficulty: 'Medium',
+		correctAnswer: 'In My Bed',
+		incorrectAnswers: ['Sue Me', 'Almost Love', 'Thumbs'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question:
+			"Which song by Sabrina Carpenter features the lyrics 'Can't blame a girl for trying'?",
+		difficulty: 'Easy',
+		correctAnswer: "Can't Blame a Girl for Trying",
+		incorrectAnswers: ['Eyes Wide Open', 'On Purpose', 'Thumbs'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's debut single?",
+		difficulty: 'Medium',
+		correctAnswer: "Can't Blame a Girl for Trying",
+		incorrectAnswers: ['Eyes Wide Open', 'On Purpose', 'Thumbs'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "Which song by Sabrina Carpenter features the lyrics 'We're burning bright'?",
+		difficulty: 'Medium',
+		correctAnswer: 'On Purpose',
+		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's second studio album?",
+		difficulty: 'Medium',
+		correctAnswer: 'Evolution',
+		incorrectAnswers: ['Eyes Wide Open', 'Singular: Act I', 'Singular: Act II'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question:
+			"Which song by Sabrina Carpenter features the lyrics 'You're my favorite kind of night'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Sue Me',
+		incorrectAnswers: ['Thumbs', 'Almost Love', 'Why'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "What is the name of Sabrina Carpenter's 2016 single?",
+		difficulty: 'Medium',
+		correctAnswer: 'Thumbs',
+		incorrectAnswers: ['Sue Me', 'Almost Love', 'Why'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: "Which song by Sabrina Carpenter features the lyrics 'We're just kids in love'?",
+		difficulty: 'Medium',
+		correctAnswer: 'Why',
+		incorrectAnswers: ['Thumbs', 'Sue Me', 'Almost Love'],
+		category: 'Sabrina Carpenter'
+	},
+	{
+		question: 'What is the name of the book often referred to as the "Witches\' Bible"?',
+		difficulty: 'Medium',
+		correctAnswer: "The Witches' Bible",
+		incorrectAnswers: ['The Book of Shadows', 'The Necronomicon', 'The Lesser Key of Solomon'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the term for a witch's personal magical journal?",
+		difficulty: 'Easy',
+		correctAnswer: 'Book of Shadows',
+		incorrectAnswers: ['Grimoire', 'Spellbook', 'Codex'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which herb is commonly used in protection spells?',
+		difficulty: 'Medium',
+		correctAnswer: 'Sage',
+		incorrectAnswers: ['Lavender', 'Rosemary', 'Thyme'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'What is the name of the festival celebrated by witches on October 31st?',
+		difficulty: 'Easy',
+		correctAnswer: 'Samhain',
+		incorrectAnswers: ['Beltane', 'Imbolc', 'Lughnasadh'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the term for a witch's sacred space?",
+		difficulty: 'Medium',
+		correctAnswer: 'Circle',
+		incorrectAnswers: ['Altar', 'Sanctuary', 'Temple'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which crystal is often used for healing and protection?',
+		difficulty: 'Easy',
+		correctAnswer: 'Amethyst',
+		incorrectAnswers: ['Quartz', 'Obsidian', 'Citrine'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'What is the name of the ritual tool used to direct energy?',
+		difficulty: 'Medium',
+		correctAnswer: 'Athame',
+		incorrectAnswers: ['Wand', 'Chalice', 'Pentacle'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which phase of the moon is best for banishing spells?',
+		difficulty: 'Medium',
+		correctAnswer: 'Waning Moon',
+		incorrectAnswers: ['New Moon', 'Full Moon', 'Waxing Moon'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'What is the term for a spell that returns negative energy to its source?',
+		difficulty: 'Hard',
+		correctAnswer: 'Reversal Spell',
+		incorrectAnswers: ['Binding Spell', 'Hex', 'Curse'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which element is associated with the direction East?',
+		difficulty: 'Medium',
+		correctAnswer: 'Air',
+		incorrectAnswers: ['Fire', 'Water', 'Earth'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the name of the witch's holiday that marks the beginning of spring?",
+		difficulty: 'Medium',
+		correctAnswer: 'Imbolc',
+		incorrectAnswers: ['Beltane', 'Ostara', 'Litha'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which plant is often used in love spells?',
+		difficulty: 'Easy',
+		correctAnswer: 'Rose',
+		incorrectAnswers: ['Mint', 'Basil', 'Sage'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the term for a witch's magical working space?",
+		difficulty: 'Medium',
+		correctAnswer: 'Altar',
+		incorrectAnswers: ['Circle', 'Sanctuary', 'Temple'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which metal is commonly associated with the planet Venus?',
+		difficulty: 'Hard',
+		correctAnswer: 'Copper',
+		incorrectAnswers: ['Iron', 'Silver', 'Gold'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'What is the name of the spell that seeks to attract something to the caster?',
+		difficulty: 'Medium',
+		correctAnswer: 'Attraction Spell',
+		incorrectAnswers: ['Banishing Spell', 'Binding Spell', 'Hex'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which color candle is often used in protection spells?',
+		difficulty: 'Easy',
+		correctAnswer: 'Black',
+		incorrectAnswers: ['White', 'Red', 'Green'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the term for a witch's magical name?",
+		difficulty: 'Medium',
+		correctAnswer: 'Craft Name',
+		incorrectAnswers: ['Spirit Name', 'Shadow Name', 'Mystic Name'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which herb is often used in purification rituals?',
+		difficulty: 'Easy',
+		correctAnswer: 'Lavender',
+		incorrectAnswers: ['Rosemary', 'Thyme', 'Basil'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'What is the term for a spell that binds someone from causing harm?',
+		difficulty: 'Medium',
+		correctAnswer: 'Binding Spell',
+		incorrectAnswers: ['Hex', 'Curse', 'Reversal Spell'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which element is associated with the direction South?',
+		difficulty: 'Medium',
+		correctAnswer: 'Fire',
+		incorrectAnswers: ['Water', 'Earth', 'Air'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the name of the witch's holiday that celebrates the harvest?",
+		difficulty: 'Medium',
+		correctAnswer: 'Lughnasadh',
+		incorrectAnswers: ['Mabon', 'Samhain', 'Beltane'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which crystal is often used for grounding and protection?',
+		difficulty: 'Easy',
+		correctAnswer: 'Obsidian',
+		incorrectAnswers: ['Amethyst', 'Quartz', 'Citrine'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the term for a witch's magical spell book?",
+		difficulty: 'Medium',
+		correctAnswer: 'Grimoire',
+		incorrectAnswers: ['Book of Shadows', 'Spellbook', 'Codex'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which metal is commonly associated with the planet Mars?',
+		difficulty: 'Hard',
+		correctAnswer: 'Iron',
+		incorrectAnswers: ['Copper', 'Silver', 'Gold'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'What is the name of the spell that seeks to remove negative energy?',
+		difficulty: 'Medium',
+		correctAnswer: 'Banishing Spell',
+		incorrectAnswers: ['Attraction Spell', 'Binding Spell', 'Hex'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which color candle is often used in healing spells?',
+		difficulty: 'Easy',
+		correctAnswer: 'Blue',
+		incorrectAnswers: ['White', 'Red', 'Green'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the term for a witch's magical tool used for divination?",
+		difficulty: 'Medium',
+		correctAnswer: 'Scrying Mirror',
+		incorrectAnswers: ['Athame', 'Wand', 'Chalice'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which herb is often used in love potions?',
+		difficulty: 'Easy',
+		correctAnswer: 'Rosemary',
+		incorrectAnswers: ['Mint', 'Basil', 'Sage'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'What is the term for a spell that seeks to cause harm?',
+		difficulty: 'Medium',
+		correctAnswer: 'Hex',
+		incorrectAnswers: ['Binding Spell', 'Banishing Spell', 'Reversal Spell'],
+		category: 'Witchcraft'
+	},
+	{
+		question: 'Which element is associated with the direction West?',
+		difficulty: 'Medium',
+		correctAnswer: 'Water',
+		incorrectAnswers: ['Fire', 'Earth', 'Air'],
+		category: 'Witchcraft'
+	},
+	{
+		question: "What is the name of the witch's holiday that celebrates the summer solstice?",
+		difficulty: 'Medium',
+		correctAnswer: 'Litha',
+		incorrectAnswers: ['Beltane', 'Mabon', 'Samhain'],
+		category: 'Witchcraft'
 	}
 ];
