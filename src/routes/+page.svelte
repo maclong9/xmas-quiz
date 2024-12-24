@@ -10,9 +10,8 @@
 		<h1 class="mb-4 text-4xl font-bold">Welcome to the Xmas Quiz!</h1>
 
 		<p class="mx-auto max-w-xl text-lg leading-relaxed">
-			To save the time we spend every year searching through all the different sites and packs of
-			cards, I have created a quiz app that has a great selection of questions for everyone to
-			enjoy!
+			Filled with questions related to cats, Sabrina Carpenter (her music only), witches (actual
+			witch stuff not film related ones) and Belarus, Enjoy!
 		</p>
 
 		<a href="/game" class="button" in:scale={{ duration: 400, delay: 500, start: 0.8 }}>
