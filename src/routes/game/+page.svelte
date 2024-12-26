@@ -43,6 +43,24 @@
 			}
 		}, 2000);
 	}
+
+	function getAnswerStyles(answer: string) {
+		const isSelected = selectedAnswer === answer;
+		const isCorrectAnswer = answer === currentQuestion.correctAnswer;
+		const isCorrectSelection = isSelected && isCorrectAnswer;
+		const isIncorrectSelection = isSelected && !isCorrectAnswer;
+		const isDisabled = questionAnswered && answer !== selectedAnswer;
+		const isSelectedAndAnswered = questionAnswered && isSelected;
+
+		return cn(
+			'border-4 border-transparent',
+			isCorrectSelection && 'bg-green-500',
+			isIncorrectSelection && 'bg-red-500',
+			questionAnswered && isCorrectAnswer && '!border-green-500',
+			isDisabled && 'hover:scale-100',
+			isSelectedAndAnswered && 'scale-105'
+		);
+	}
 </script>
 
 {#if gameOver}
@@ -94,14 +112,7 @@
 		<div class="mt-4 flex min-h-[272px] flex-col justify-end">
 			{#each answers as answer, i (answer)}
 				<button
-					class={cn(
-						'border-4 border-transparent',
-						selectedAnswer === answer && answer === currentQuestion.correctAnswer && 'bg-green-500',
-						selectedAnswer === answer && answer !== currentQuestion.correctAnswer && 'bg-red-500',
-						questionAnswered && answer === currentQuestion.correctAnswer && '!border-green-500',
-						questionAnswered && answer !== selectedAnswer && 'hover:scale-100',
-						questionAnswered && answer === selectedAnswer && 'scale-105'
-					)}
+					class={getAnswerStyles(answer)}
 					onclick={() => handleAnswer(answer)}
 					disabled={questionAnswered}
 					in:fly={{ y: 20, duration: 500, delay: 300 + i * 100 }}
