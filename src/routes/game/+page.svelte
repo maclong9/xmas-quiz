@@ -34,7 +34,7 @@
 		}
 
 		setTimeout(() => {
-			if (nextQuestionIndex < questions.length) {
+			if (currentQuestionIndex + 1 < questions.length) {
 				currentQuestionIndex += 1;
 				questionAnswered = false;
 				selectedAnswer = '';
